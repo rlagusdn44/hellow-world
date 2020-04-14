@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 리뉴얼 투썸플레이스 </title>
+    <link rel="stylesheet" href="CSS/sub_master.css" />
+    <link rel="stylesheet" href="CSS/swiper.css">
+    <link rel="stylesheet" href="CSS/top_visual.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/ul.js"></script>
+    <script src="js/ul.moblie.js"></script>
+    <script src="js/fms.js"></script>
+    <script src="js/main_nav_wrapper_fix.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/width.js"></script>
+    <script src="js/back_to_top.js"></script>
+</head>
+
+<body>
+    <div id="wrap" class="main">
+        <header>
+            <div id="utility">
+                <ul class="sns">
+                    <li class="fb"><a href="https://www.facebook.com/pascucci1883"><span>Facebook</span></a></li>
+                    <li class="blog"><a href="http://blog.naver.com/pascucci1883"><span>Blog</span></a></li>
+                    <li class="insta"><a href="https://www.facebook.com/pascucci1883"><span>Instagram</span></a></li>
+                    <li class="youtube"><a href="https://www.facebook.com/pascucci1883"><span>Youtube</span></a></li>
+                    <li class="login"><a href="#"><span>로그인</span></a></li>
+                    <li class="join"><a href="sub_index.html"><span style="color: red">회원가입</span></a></li>
+                </ul>
+            </div>
+
+            <input id="toggle_menu" type="checkbox">
+            <div class="main_nav_wrapper">
+                <div class="main_nav_wrap">
+                    <div class="main_nav">
+                        <h1><a href="index.html"><img src="images/logo.jpg" alt="로고" /></a></h1>
+                        <label class="toggle_menu" for="toggle_menu">토글메뉴</label>
+                        <nav>
+                            <div class="schstore">
+                                <form>
+                                    <input type="text" id="search" name="searchValue" placeholder="매장명을 입력하세요." title="검색어 입력">
+                                    <input type="image" src="images/gnb_sch_btn.png" alt="검색" />
+                                </form>
+                            </div>
+                            <ul class="depth1">
+                                <li class="submenu">
+                                    <h3>브랜드스토리</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <h3>브랜드이야기</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">투썸플레이스 소개</a></li>
+                                                <li><a href="#">히스토리</a></li>
+                                                <li><a href="#">투썸플레이스 BI</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">커피이야기</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">디저트이야기</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <h3>메뉴</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <a href="#">NEW</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>커피&음료</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">에스프레소</a></li>
+                                                <li><a href="#">블렌디드</a></li>
+                                                <li><a href="#">티(TWG)</a></li>
+                                                <li><a href="#">기타</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>디저트</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">디저트</a></li>
+                                                <li><a href="#">아이스크림</a></li>
+                                                <li><a href="#">빙수</a></li>
+                                                <li><a href="#">마카롱/초코렛</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>델리</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">샌드위치</a></li>
+                                                <li><a href="#">샐러드</a></li>
+                                                <li><a href="#">베이커리</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>상품</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">커피상품</a></li>
+                                                <li><a href="#">커피웨어/기타</a></li>
+                                                <li><a href="#">기프트세트</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>홀케이크</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">무스케이크</a></li>
+                                                <li><a href="#">생크림케이크</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>영양성분표</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">디저트</a></li>
+                                                <li><a href="#">케이크</a></li>
+                                                <li><a href="#">커피&음료</a></li>
+                                                <li><a href="#">델리</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <h3>스토어</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <h3>매장찾기</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">신규 오픈 매장</a></li>
+                                                <li><a href="#">매장찾기</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <h3>Event & Joy</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <h3>이벤트</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">진행중인 이벤트</a></li>
+                                                <li><a href="#">매장별 이벤트</a></li>
+                                                <li><a href="#">종료된 이벤트</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>멤버십&제휴카드</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">CJ ONE</a></li>
+                                                <li><a href="#">제휴 안내</a></li>
+                                                <li><a href="#">모바일 교환권</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">케이크 클래스</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <h3>Franchise</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <a href="#">창업정보 및 절차</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">온라인창업상담</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">정보공개서</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">가맹점 전용 금융상품</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="sub_wrap">
+            <div class="top_wrap">
+                <div>
+                    <h1>회원가입</h1>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="tab">
+                    <div class="agreement_title"><img src="images/title_1.png" alt="필수입력사항" /></div>
+                    <span><img src="images/bl.png" alt="체크" />는 필수 입력사항 입니다.</span>
+                </div>
+                <div class="bg">
+                    <form name="form_app">
+                        <fieldset>
+                            <legend>회원정보입력</legend>
+                            <div class="member_tbl">
+                                <table summary="회원정보입력">
+                                    <caption>회원정보입력양식</caption>
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="85%">
+                                        <col>
+                                    </colgroup>
+                                    <tbody class="width">
+                                        <tr class="border_bt_none">
+                                            <th scope="row" class="mobile"><span>카드번호</span></th>
+                                            <td class="padding_type">
+                                                <input name="cardnumber" type="text" size="20" maxlength="16" id="cardnumber" title="카드번호 입력" class="input_1">
+                                                <label for="cardnumber" class="label_hidden">카드번호</label>
+                                                &nbsp;
+                                                <a href="#"><img src="images/card_but.png" alt="내카드번호 찾기" class="t_img" /></a>
+                                                <p class="text_type">미입력시 기존 보유 카드번호로 등록되거나, 온라인 카드번호가 발행됩니다.</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row"><span class="check mobile">카드비밀번호<br />설정 여부</span></th>
+                                            <td>
+                                                <input type="radio" name="pwdUseChk" value="Y" id="fix_pw">예&nbsp;&nbsp;&nbsp;
+                                                <label for="fix_pw" class="label_hidden">카드비밀번호 설정 여부</label>
+                                                <input type="radio" name="pwdUseChk" value="N" id="fix_pw1" checked="checked">아니오&nbsp;&nbsp;
+                                                <label for="fix_pw1" class="label_hidden">카드비밀번호 설정 여부</label>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border_bt_none">
+                                            <th scope="row"><span class="check mobile">이름</span></th>
+                                            <td>
+                                                <input name="name" type="text" size="20" maxlength="10" id="name" title="이름 입력" class="input_1">
+                                                <label for="name" class="label_hidden">이름</label>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border_bt_none">
+                                            <th scope="row"><span class="check mobile">아이디</span></th>
+                                            <td>
+                                                <input name="h_id" id="h_id" title="아이디 입력" type="text" size="20" maxlength="20" class="input_1">
+                                                <label for="h_id" class="label_hidden">아이디</label>&nbsp;
+                                                <a href="#"><img src="images/over_but.png" alt="중복확인" /></a>
+                                                *4~10자 이내 영문소문자와 숫자의 조합
+                                            </td>
+                                        </tr>
+                                        <tr class="border_bt_none">
+                                            <th scope="row"><span class="check mobile">비밀번호</span></th>
+                                            <td>
+                                                <input name="m_pw" id="m_pw" title="비밀번호 입력" type="password" size="20" maxlength="13" class="input_1 td_style1">
+                                                <label for="m_pw" class="label_hidden">비밀번호</label><br />
+                                                * 8~12자 이내 영문,숫자,특수문자 중 2가지 이상을 조합해야 합니다.<br />* 사용 불가 특수 문자: ' " + / \ ; : - _ ^ & ( ) 제외
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span class="check mobile">비밀번호 확인</span></th>
+                                            <td>
+                                                <input name="m_pw2" id="m_pw2" title="비밀번호 확인 입력" type="password" size="20" maxlength="12" class="input_1">
+                                                <label for="m_pw2" class="label_hidden">비밀번호 확인</label>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border_bt_none">
+                                            <th scope="row"><span class="check mobile">핸드폰</span></th>
+                                            <td>
+                                                <select title="앞자리" class="input_2">
+                                                    <option>010</option>
+                                                    <option>011</option>
+                                                    <option>016</option>
+                                                    <option>017</option>
+                                                </select>
+                                                -
+                                                <input type="text" maxlength="4" title="중간자리" class="input_2">
+                                                -
+                                                <input type="text" maxlength="4" title="뒷자리" class="input_2">
+                                            </td>
+                                        </tr>
+                                        <tr class="border_bt_none">
+                                            <th scope="row"><span>자택 전화번호</span></th>
+                                            <td>
+                                                <select name ="phone1" class="input_2">
+                                                    <Option Value='선택'>선택</Option>
+                                                    <Option Value='02'>서울</Option>
+                                                    <Option Value='031'>경기</Option>
+                                                    <Option Value='032'>인천</Option>
+                                                    <Option Value='033'>강원</Option>
+                                                    <Option Value='041'>충남</Option>
+                                                    <Option Value='042'>대전</Option>
+                                                    <Option Value='043'>충북</Option>
+                                                    <Option Value='044'>044</Option>
+                                                    <Option Value='051'>부산</Option>
+                                                    <Option Value='052'>울산</Option>
+                                                    <Option Value='053'>대구</Option>
+                                                    <Option Value='054'>경북</Option>
+                                                    <Option Value='055'>경남</Option>
+                                                    <Option Value='061'>전남</Option>
+                                                    <Option Value='062'>광주</Option>
+                                                    <Option Value='063'>전북</Option>
+                                                    <Option Value='064'>제주</Option>
+                                                </select>
+                                                -
+                                                <input name="m_phone2" id="tel1" title="자택 전화번호 중간자리 입력" type="text" size="5" maxlength="4" class="input_2">
+                                                -
+                                                <input name="m_phone3" id="tel2" title="자택 전화번호 마지막자리 입력" type="text" size="5" maxlength="4" class="input_2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span class="check mobile">이메일</span></th>
+                                            <td>
+                                                <input title="이메일 앞자리 입력" type="text" size="15" class="input_3">
+                                                @
+                                                <input name="m_email_2" id="email1" title="이메일뒷자리 입력" type="text" size="25" class="input_4" value="">
+                                                <select id="email2" name="lstMail" title="이메일 뒷자리 선택입력" class="input_3" onchange="document.form_app.m_email_2.focus();document.form_app.m_email_2.value=document.form_app.lstMail[document.form_app.lstMail.selectedIndex].value;">
+                                                    <option value=""> -- 직접입력 -- </option>
+                                                    <option value="hanmail.net">hanmail.net</option>
+                                                    <option value="naver.com">naver.com</option>
+                                                    <option value="nate.com">nate.com</option>
+                                                    <option value="daum.net">daum.net</option>
+                                                    <option value="gmail.com">gmail.com</option>
+                                                </select>
+                                                <br />
+                                                <br />
+                                                * 해외 메일서버를 이용하는 이메일(<font color="#FF6600">hotmail.com, yahoo.com, gmail.com, msn.com</font> 등)의 경우 <br>&nbsp;&nbsp;수신이 정상적이지 않을 수 있습니다.
+                                            </td>
+                                        </tr>
+                                        <tr class="border_bt_none">
+                                            <th scope="row"><span class="check mobile" id="sel_addr">주소</span></th>
+                                            <td>
+                                                <div id="tabs">
+                                                    <ul class="tab">
+                                                        <li><a href="#tab1" class="selected">자택</a></li>
+                                                        <li><a href="#tab2">회사</a></li>
+                                                    </ul>
+                                                    <ul class="panel">
+                                                        <li id="tab1">
+                                                            <p class="m5">
+                                                                <input class="input_5" name="m_zip1" id="juso" type="text" maxlength="6" title="우편번호 입력" readonly value="">
+                                                                <img id="findAddrBtn1" src="images/mail_but.png" border="0" align="absmiddle" alt="우편번호찾기">
+                                                            </p>
+                                                            <input type="hidden" name="m_addr1_old" value=" " />
+                                                            <input type="hidden" name="m_addr2_old" value=" " />
+                                                            <p>*도로명 주소</p>
+                                                            <p class="m5">
+                                                                <input class="input_6" name="m_addr1" id="do_juso_r" type="text" title="주소입력" maxlength="200" value="">
+                                                            </p>
+                                                            <input type="hidden" name="m_addr2" value=" " />
+                                                        </li>
+
+                                                        <li id="tab2">
+                                                            <p class="m5">
+                                                                <input class="input_5" name="m_c_zip1" id="c_juso" type="text" maxlength="6" title="우편번호 입력" readonly>
+                                                                <img id="findAddrBtn2" src="images/mail_but.png" border="0" align="absmiddle" alt="우편번호찾기">
+                                                            </p>
+                                                            <input type="hidden" name="m_c_addr1_old" value=" " />
+                                                            <input type="hidden" name="m_c_addr2_old" value=" " />
+                                                            <p>*도로명 주소</p>
+                                                            <p class="m5">
+                                                                <input class="input_6" name="m_c_addr1" id="c_do_juso_r" type="text" title="주소입력" maxlength="200">
+                                                            </p>
+                                                            <input type="hidden" name="m_c_addr2" value=" " />
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span class="check mobile">우편물 배송지</span></th>
+                                            <td>
+                                                <input type="radio" value="10" name="h_delivery">자택&nbsp;&nbsp;
+                                                <input type="radio" value="20" name="h_delivery">회사&nbsp;&nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span class="check mobile">개인정보 수신 및 마케팅 활용 동의</span></th>
+                                            <td>
+                                                <p class="m5 text_type">
+                                                    <font color="#0000ff">* 수신 및 마케팅 활용에 동의하지 않아도 해피포인트 적립/사용, 회원가입은 하실 수 있습니다.</font><br />
+                                                    * 정보수신 및 활용동의 시 해피포인트카드 및 해피포인트 어플리케이션에서 제공하는 생일쿠폰 등 다양한 할인쿠폰 및 서비스 안내,<br />&nbsp;해피포인트카드의 제휴사 및 제휴가맹점이 취급하는 상품/서비스/이벤트/문화공연등에 대한 안내 등을 받아보실 수 있습니다.<br />
+                                                    * TM 수신동의 시, 5%적립과 10~20%할인을 동시에 받는 해피포인트 제휴카드 안내를 받으실 수 있습니다.
+                                                </p>
+                                                <table class="table_s02" summary="정보수신여부" cellpadding="0" cellspacing="0">
+                                                    <caption>정보수신여부입력양식</caption>
+                                                    <colgroup>
+                                                        <col width="20%">
+                                                        <col width="20%">
+                                                        <col width="20%">
+                                                        <col width="20%">
+                                                        <col width="20%">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr class="m_tr">
+                                                            <th scope="col" style="background-color:#fff;">이메일</th>
+                                                            <th scope="col" style="background-color:#fff;">문자메세지</th>
+                                                            <th scope="col" style="background-color:#fff;">App Push</th>
+                                                            <th scope="col" style="background-color:#fff;">우편물</th>
+                                                            <th scope="col" style="background-color:#fff;">TM</th>
+                                                        </tr>
+                                                        <tr class="m_tr">
+                                                            <td>
+                                                                <input type="radio" value="Y" name="h_email"><b>동의함</b>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" value="N" name="h_email"><b>동의안함</b>
+                                                            </td>
+                                                            <td>
+                                                                <input type="radio" value="Y" name="h_sns"><b>동의함</b>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" value="N" name="h_sns"><b>동의안함</b>
+                                                            </td>
+                                                            <td>
+                                                                <input type="radio" value="Y" name="h_push"><b>동의함</b>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" value="N" name="h_push"><b>동의안함</b>
+                                                            </td>
+                                                            <td>
+                                                                <input type="radio" value="Y" name="h_dm"><b>동의함</b>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" value="N" name="h_dm"><b>동의안함</b>
+                                                            </td>
+                                                            <td>
+                                                                <input type="radio" value="Y" name="h_tm"><b>동의함</b>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" value="N" name="h_tm"><b>동의안함</b>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="text_type">TM 수신 동의 시, 5%적립과 10~20%할인을 동시에 받는 해피포인트 제휴카드 안내를 받으실 수 있습니다. </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span class="check mobile">정보 수신<br />선호 매체</span></th>
+                                            <td>
+                                                <p class="m5 text-type">
+                                                    이벤트/쿠폰 등 해피포인트카드 관련 정보 수신 시 선호하는 매체를 선택해주세요.
+                                                </p>
+                                                <p>
+                                                    <input type="radio" name="h_mid" value="06">이메일&nbsp;&nbsp;&nbsp;<input type="radio" name="h_mid" value="08">우편&nbsp;&nbsp;&nbsp;<input type="radio" name="h_mid" value="07">문자&nbsp;&nbsp;&nbsp;<input type="radio" name="h_mid" value="09">전화
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="siren_btn">
+                                    <input type="image" src="images/bt_ok.png" alt="확인" />
+                                    <a href="#"><img src="images/bt_cancel.gif" alt="취소" width="75" height="29" border="0" /></a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerWrap">
+                <div class="footer_logo">
+                    <img src="images/footer_logo.png" alt="로고">
+                </div>
+                <div class="info">
+                    <ul>
+                        <li><a href="#">리쿠르트</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><span class="footer_color">개인정보처리방침</span></a></li>
+                        <li><a href="#">이메일 무단수집거부</a></li>
+                        <li><a href="#">법적고지</a></li>
+                    </ul>
+                    <address>
+                        <p>서울특별시 중구 을지로 170, 8층(을지로4가, 을지로트윈타워) 투썸플레이스(주)</p>
+                    </address>
+                    <p class="copyright">
+                        COPYRIGHT © 2019 A TWOSOME PLACE CO.LTD.ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+
+                <div class="snsFamily">
+                    <ul class="footer_sns">
+                        <li><a href="#"><img src="images/foot_ic_facebook.png" alt="페이스북" /></a></li>
+                        <li><a href="#"><img src="images/foot_ic_blog.png" alt="블로그" /></a></li>
+                        <li><a href="#"><img src="images/foot_ic_insta.png" alt="인스타그램" /></a></li>
+                        <li><a href="#"><img src="images/foot_ic_youtube.png" alt="유튜브" /></a></li>
+                    </ul>
+                    <div class="footer_logo_m">
+                        <img src="images/footer_logo.png" alt="로고">
+                    </div>
+                    <div id="fms">
+                        <h2>사이트맵 바로가기</h2>
+                        <ul>
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">메뉴</a></li>
+                            <li><a href="#">매장</a></li>
+                            <li><a href="#">투썸플레이스 APP</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">가맹정보</a></li>
+                            <li><a href="#">창업설명회</a></li>
+                            <li><a href="#">기업 및 단체 구매 안내</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="back_to_top">
+            <a href="#"><img src="images/btn_top.png" alt="top" /></a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 리뉴얼 투썸플레이스 </title>
+    <link rel="stylesheet" href="CSS/master.css" />
+    <link rel="stylesheet" href="CSS/swiper.css">
+    <link rel="stylesheet" href="CSS/top_visual.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/ul.js"></script>
+    <script src="js/ul.moblie.js"></script>
+    <script src="js/product_slide.js"></script>
+    <script src="js/sns_slide.js"></script>
+    <script src="js/top_visual.js"></script>
+    <script src="js/fms.js"></script>
+    <script src="js/main_nav_wrapper_fix.js"></script>
+    <script src="js/back_to_top.js"></script>
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 820px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide a {
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner1 {
+            background: url(images/banner1.jpg) no-repeat;
+            background-color: #fec64d;
+            background-position: 50% 100%;
+        }
+
+        .banner2 {
+            background: url(images/banner2.jpg) no-repeat;
+            background-color: #faf6ed;
+            background-position: 50% 100%;
+        }
+
+        .banner3 {
+            background: url(images/banner3.jpg) no-repeat;
+            background-color: #ffebbc;
+            background-position: 50% 100%;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1276px) {
+            .swiper-container {
+                height: 550px;
+            }
+
+            .swiper-slide {
+                height: 550px;
+            }
+
+            .banner1 {
+                background-size: 800px;
+            }
+
+            .banner2 {
+                background-size: 740px;
+            }
+
+            .banner3 {
+                background-size: 740px;
+            }
+        }
+
+        @media screen and (max-width: 1023px) {
+            .swiper-container {
+                height: 415px;
+            }
+
+            .swiper-slide {
+                height: 415px;
+            }
+
+            .banner1 {
+                background-image: url(images/banner1_m.jpg);
+                background-size: auto 350px;
+            }
+
+            .banner2 {
+                background-image: url(images/banner2_m.jpg);
+                background-size: auto 480px;
+            }
+
+            .banner3 {
+                background-image: url(images/banner3_m.jpg);
+                background-size: auto 480px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap" class="main">
+        <header>
+            <div id="utility">
+                <ul class="sns">
+                    <li class="fb"><a href="#"><span>Facebook</span></a></li>
+                    <li class="blog"><a href="#"><span>Blog</span></a></li>
+                    <li class="insta"><a href="#"><span>Instagram</span></a></li>
+                    <li class="youtube"><a href="#"><span>Youtube</span></a></li>
+                    <li class="login"><a href="#"><span>로그인</span></a></li>
+                    <li class="join"><a href="sub_index.html"><span style="color: red">회원가입</span></a></li>
+                </ul>
+            </div>
+
+            <input id="toggle_menu" type="checkbox">
+            <div class="main_nav_wrapper">
+                <div class="main_nav_wrap">
+                    <div class="main_nav">
+                        <h1><a href="index.html"><img src="images/logo.jpg" alt="로고" /></a></h1>
+                        <label class="toggle_menu" for="toggle_menu">토글메뉴</label>
+                        <nav>
+                            <div class="schstore">
+                                <form>
+                                    <input type="text" id="search" name="searchValue" placeholder="매장명을 입력하세요." title="검색어 입력">
+                                    <input type="image" src="images/gnb_sch_btn.png" alt="검색" />
+                                </form>
+                            </div>
+                            <ul class="depth1">
+                                <li class="submenu">
+                                    <h3>브랜드스토리</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <h3>브랜드이야기</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">투썸플레이스 소개</a></li>
+                                                <li><a href="#">히스토리</a></li>
+                                                <li><a href="#">투썸플레이스 BI</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">커피이야기</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">디저트이야기</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <h3>메뉴</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <a href="#">NEW</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>커피&음료</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">에스프레소</a></li>
+                                                <li><a href="#">블렌디드</a></li>
+                                                <li><a href="#">티(TWG)</a></li>
+                                                <li><a href="#">기타</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>디저트</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">디저트</a></li>
+                                                <li><a href="#">아이스크림</a></li>
+                                                <li><a href="#">빙수</a></li>
+                                                <li><a href="#">마카롱/초코렛</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>델리</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">샌드위치</a></li>
+                                                <li><a href="#">샐러드</a></li>
+                                                <li><a href="#">베이커리</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>상품</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">커피상품</a></li>
+                                                <li><a href="#">커피웨어/기타</a></li>
+                                                <li><a href="#">기프트세트</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>홀케이크</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">전체</a></li>
+                                                <li><a href="#">무스케이크</a></li>
+                                                <li><a href="#">생크림케이크</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>영양성분표</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">디저트</a></li>
+                                                <li><a href="#">케이크</a></li>
+                                                <li><a href="#">커피&음료</a></li>
+                                                <li><a href="#">델리</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <h3>스토어</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <h3>매장찾기</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">신규 오픈 매장</a></li>
+                                                <li><a href="#">매장찾기</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <h3>Event & Joy</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <h3>이벤트</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">진행중인 이벤트</a></li>
+                                                <li><a href="#">매장별 이벤트</a></li>
+                                                <li><a href="#">종료된 이벤트</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <h3>멤버십&제휴카드</h3>
+                                            <ul class="depth3">
+                                                <li><a href="#">CJ ONE</a></li>
+                                                <li><a href="#">제휴 안내</a></li>
+                                                <li><a href="#">모바일 교환권</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">케이크 클래스</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <h3>Franchise</h3>
+                                    <ul class="depth2">
+                                        <li class="submenu">
+                                            <a href="#">창업정보 및 절차</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">온라인창업상담</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">정보공개서</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">가맹점 전용 금융상품</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="https://www.twosome.co.kr:7009/event/view.asp?idx=424&queryString=" class="banner1"></a></div>
+                <div class="swiper-slide"><a href="#" class="banner2"></a></div>
+                <div class="swiper-slide"><a href="#" class="banner3"></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+        </script>
+
+        <section id="container">
+
+            <!-- top visual -->
+            <div class="topVisual">
+                <div class="visBg visBg01">
+                    <div></div>
+                </div>
+                <div class="visBg visBg02">
+                    <div></div>
+                </div>
+                <div class="visBg visBg03">
+                    <div></div>
+                </div>
+                <div class="topVisualWrap">
+                    <!-- motion1 -->
+                    <div class="mainVisual">
+                        <div class="visImg01">
+                            <p><img src="images/t_img_visual_01_01.png" alt="" class="visWeb"><img src="images/t_img_visual_01_01_m.png" alt="" class="visMob"></p>
+                        </div>
+                        <div class="visImg02">
+                            <p><img src="images/t_img_visual_01_02.png" alt="" class="visWeb"><img src="images/t_img_visual_01_02_m.png" alt="" class="visMob"></p>
+                        </div>
+                        <p class="visTxt01 txt1">
+                            <span class="visTxt01_1"><img src="images/t_txt_visual_01_01.png" alt=""></span>
+                            <span class="visTxt01_2"><img src="images/t_txt_visual_01_02.png" alt=""></span>
+                        </p>
+                        <p class="visTxt02 txt1">
+                            <span class="visTxt02_1"><img src="images/t_txt_visual_01_03.png" alt=""></span>
+                            <span class="visTxt02_2"><img src="images/t_txt_visual_01_04.png" alt=""></span>
+                            <span class="visTxt02_3"><img src="images/t_txt_visual_01_05.png" alt=""></span>
+                        </p>
+                        <p class="visTxt03 m_txt_1">
+                            <span class="visTxt03_1"><img src="images/t_txt_visual_01_01_m.png" alt=""></span>
+                        </p>
+                    </div>
+                    <!-- //motion1 -->
+                    <!-- motion2 -->
+                    <div class="mainVisual">
+                        <div class="visImg01">
+                            <p><img src="images/t_img_visual_02_01.png" alt="" class="visWeb"><img src="images/t_img_visual_02_01.png" alt="" class="visMob"></p>
+                        </div>
+                        <div class="visImg02">
+                            <p><img src="images/t_img_visual_02_02.png" alt="" class="visWeb"><img src="images/t_img_visual_02_02.png" alt="" class="visMob"></p>
+                        </div>
+                        <p class="visTxt01 txt2">
+                            <span class="visTxt01_1"><img src="images/t_txt_visual_02_01.png" alt=""></span>
+                            <span class="visTxt01_2"><img src="images/t_txt_visual_02_02.png" alt=""></span>
+                        </p>
+                        <p class="visTxt02 txt2">
+                            <span class="visTxt02_1"><img src="images/t_txt_visual_02_03.png" alt=""></span>
+                            <span class="visTxt02_2"><img src="images/t_txt_visual_02_04.png" alt=""></span>
+                        </p>
+                        <p class="visTxt03 m_txt_2">
+                            <span class="visTxt03_1"><img src="images/t_txt_visual_02_01_m.png" alt=""></span>
+                        </p>
+                    </div>
+                    <!-- //motion2 -->
+                    <!-- motion3 -->
+                    <div class="mainVisual">
+                        <div class="visImg01">
+                            <p><img src="images/t_img_visual_03_01.png" alt="" class="visWeb"><img src="images/t_img_visual_03_01.png" alt="" class="visMob"></p>
+                        </div>
+                        <div class="visImg02">
+                            <p><img src="images/t_img_visual_03_02.png" alt="" class="visWeb"><img src="images/t_img_visual_03_02.png" alt="" class="visMob"></p>
+                        </div>
+                        <p class="visTxt01 txt3">
+                            <span class="visTxt01_1"><img src="images/t_txt_visual_03_01.png" alt=""></span>
+                        </p>
+                        <p class="visTxt02 txt3">
+                            <span class="visTxt02_1"><img src="images/t_txt_visual_03_02.png" alt=""></span>
+                        </p>
+                        <p class="visTxt03 m_txt_3">
+                            <span class="visTxt03_1"><img src="images/t_txt_visual_03_01_m.png" alt=""></span>
+                        </p>
+                    </div>
+                    <!-- //motion3 -->
+                    <div class="btnBrand"><a href="/company/intro_korea.asp">디저트 이야기 보기</a></div>
+                </div>
+            </div>
+            <!-- //top visual -->
+
+            <div class="product_menu_wrap">
+                <h1><strong>A TWOSOME PLACE <br />DESSERT</strong></h1>
+                <button class="prev"></button>
+                <button class="next"></button>
+                <div class="product_menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <figcaption>
+                                        <h2>더치 솔티드 카라멜 피스</h2>
+                                        <p>Dutch Slated Carame</p>
+                                    </figcaption>
+                                    <div><img src="images/recommendation_03.png" alt="더치 솔티드 카라멜 피스" /></div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <figcaption>
+                                        <h2>TWG 로얄 밀크티 쉬폰 피스</h2>
+                                        <p>TWG Royal Milktea Chiffon</p>
+                                    </figcaption>
+                                    <div><img src="images/recommendation_04.png" alt="TWG 로얄 밀크티 쉬폰 피스" /></div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <figcaption>
+                                        <h2>노르웨이의 숲</h2>
+                                        <p>Nowegian Forest</p>
+                                    </figcaption>
+                                    <div><img src="images/cake6.jpg" alt="노르웨이의 숲" /></div>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <figcaption>
+                                        <h2>뉴욕 치즈 케이크</h2>
+                                        <p>Newyork Cheese Cake</p>
+                                    </figcaption>
+                                    <div><img src="images/cake.5.jpg" alt="뉴욕 치즈 케이크" /></div>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="snswr">
+                <h1><strong>A TWOSOME PLACE<br />SNS</strong></h1>
+                <h2>스토리를 마시는 일상, 카페 투썸 플레이스</h2>
+                <button class="prev sns_m"></button>
+                <button class="next sns_m"></button>
+                <div class="comm">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/sns_instar.png" alt=""></a>
+                            <span><img></span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/sns_blog_img.png" alt=""></a>
+                            <span><img></span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/sns_facebook_img.png" alt=""></a>
+                            <span><img></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="storewr">
+                <div class="store">
+                    <h1><strong>A TWOSOME PLACE<br />STORE</strong></h1>
+                    <h2>매장찾기</h2>
+                    <div>
+                        <input type="text" id="storeSearch" name="storeSearch" placeholder="매장명 또는 주소를 입력하세요.">
+                        <button class="btnSearch" onclick="storeSearch();"></button>
+                    </div>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="footerWrap">
+                <div class="footer_logo">
+                    <img src="images/footer_logo.png" alt="로고">
+                </div>
+                <div class="info">
+                    <ul>
+                        <li><a href="#">리쿠르트</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><span class="footer_color">개인정보처리방침</span></a></li>
+                        <li><a href="#">이메일 무단수집거부</a></li>
+                        <li><a href="#">법적고지</a></li>
+                    </ul>
+                    <address>
+                        <p>서울특별시 중구 을지로 170, 8층(을지로4가, 을지로트윈타워) 투썸플레이스(주)</p>
+                    </address>
+                    <p class="copyright">
+                        COPYRIGHT © 2019 A TWOSOME PLACE CO.LTD.ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+
+                <div class="snsFamily">
+                    <ul class="footer_sns">
+                        <li><a href="#"><img src="images/foot_ic_facebook.png" alt="페이스북" /></a></li>
+                        <li><a href="#"><img src="images/foot_ic_blog.png" alt="블로그" /></a></li>
+                        <li><a href="#"><img src="images/foot_ic_insta.png" alt="인스타그램" /></a></li>
+                        <li><a href="#"><img src="images/foot_ic_youtube.png" alt="유튜브" /></a></li>
+                    </ul>
+                    <div class="footer_logo_m">
+                        <img src="images/footer_logo.png" alt="로고">
+                    </div>
+                    <div id="fms">
+                        <h2>사이트맵 바로가기</h2>
+                        <ul>
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">메뉴</a></li>
+                            <li><a href="#">매장</a></li>
+                            <li><a href="#">투썸플레이스 APP</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">가맹정보</a></li>
+                            <li><a href="#">창업설명회</a></li>
+                            <li><a href="#">기업 및 단체 구매 안내</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="franchise_bar">
+        <a href="#">가맹점 개설 상담하기<img src="images/franchise.png" alt="프랜차이즈" /></a>
+    </div>
+    <div class="back_to_top">
+        <a href="#"><img src="images/btn_top.png" alt="top" /></a>
+    </div>
+</body>
+
+</html>

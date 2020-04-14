@@ -1,0 +1,295 @@
+/* footer_style.css */
+
+/****  footer ****/
+
+footer {
+    width: 100%;
+    background: #2c2a29;
+    padding: 35px 0;
+    box-sizing: border-box;
+}
+
+.footerWrap {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.footerWrap:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.footer_logo {
+    float: left;
+    margin-right: 20px;
+    width: 70px;
+}
+
+.footer_logo > img {
+    width: 100%;
+}
+
+/**** .info ****/
+.info {
+    float: left;
+    color: #999;
+    font-size: 12px;
+}
+
+.info > ul {
+    padding-bottom: 17px;
+    box-sizing: border-box;
+}
+
+.info > ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.info > ul > li {
+    float: left;
+    padding-right: 10px;
+}
+
+.info > ul > li:not(:first-child) {
+    padding: 0 10px 0 11px;
+    background: url(../images/foot_slash.png) no-repeat 0 50%;
+}
+
+.info > ul > li > a {
+    color: #999;
+}
+
+.footer_color {
+    color: #ffe674;
+}
+
+.info > address {
+    padding-bottom: 5px;
+}
+
+.info > address > p {}
+
+.info > .copyright {
+    font-size: 12px;
+}
+
+/**** .snsFamily ****/
+.snsFamily {
+    float: right;
+}
+
+.footer_sns {
+    float: left;
+    margin-top: 15px;
+}
+
+.footer_sns > li {
+    float: left;
+    padding-left: 7px;
+}
+
+.footer_sns > li > a {}
+
+.footer_sns > li > a > img {
+    width: 30px;
+}
+
+.footer_logo_m {
+    display: none;
+}
+
+#fms {
+    float: left;
+    width: 160px;
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: #4c4c4c;
+    position: relative;
+}
+
+#fms > h2 {
+    color: #999;
+    font-size: 12px;
+    display: block;
+    height: 40px;
+    padding: 13px 10px 0;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+#fms > h2:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    content: "";
+    background: url(../images/foot_arr_familysite.png) no-repeat 0 50%;
+}
+
+#fms > ul {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    z-index: 9999;
+}
+
+#fms > ul.fmsopen {
+    height: 320px;
+    transition-duration: 0.3s;
+}
+
+#fms > ul > li {
+    font-size: 12px;
+    height: 40px;
+    background: #4c4c4c;
+}
+
+#fms > ul > li > a {
+    color: #999;
+    text-align: center;
+    line-height: 40px;
+}
+
+#fms > ul > li > a:hover {
+    background: red;
+    color: #fff;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1276px) {
+    .footerWrap {
+        width: 980px;
+    }
+
+    .info {
+        font-size: 11px;
+    }
+
+    .info > ul {
+        padding-bottom: 20px;
+    }
+
+    .info > ul > li {
+        font-size: 11px;
+    }
+
+    .info > .copyright {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    footer {
+        margin-bottom: 50px;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+
+    .footerWrap {
+        width: 100%;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+    .info {
+        float: none;
+        font-size: 9px;
+        padding: 10px 10px 0;
+        box-sizing: border-box;
+    }
+
+    .info > ul {
+        padding-bottom: 0;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .info > ul > li {
+        display: inline-block;
+        float: none;
+        padding-right: 1px;
+        line-height: 15px;
+    }
+
+    .info > ul > li:not(:first-child) {
+        padding: 0 2px 0 5px;
+        background: url(../images/foot_slash_m.png) no-repeat 0 50%;
+        background-size: 1px;
+    }
+
+    .info > address {
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    .info > .copyright {
+        text-align: center;
+        font-size: 9px;
+    }
+
+    .snsFamily {
+        position: relative;
+        float: none;
+        text-align: center;
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    .footer_sns {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -70px;
+        float: none;
+        display: inline-block;
+        margin-top: 8px;
+        vertical-align: top;
+    }
+
+    .footer_sns > li:first-child {
+        padding-left: 0;
+    }
+
+    .footer_logo_m {
+        display: block;
+        float: left;
+        margin-top: 43px;
+        width: 50px;
+        margin-left: 20px;
+    }
+
+    .footer_logo_m > img {
+        width: 100%;
+    }
+
+    #fms {
+        display: inline-block;
+        float: right;
+        width: 137px;
+        margin-top: 50px;
+        margin-right: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    #fms > h2 {
+        font-size: 11px;
+        padding: 12px 5px 0;
+    }
+
+    #fms > ul > li {
+        font-size: 11px;
+    }
+}

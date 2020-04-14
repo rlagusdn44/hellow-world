@@ -1,0 +1,62 @@
+/* master.css */
+
+@import url("common.css");
+@import url("header_style.css");
+@import url("footer_style.css");
+@import url("sub_contents_style.css");
+
+input#toggle_menu {
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+.franchise_bar {
+    position: fixed;
+    top: 160px;
+    left: 50%;
+    z-index: 100;
+    width: 170px;
+    margin-left: -630px;
+    font-size: 0;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1276px) {
+    .franchise_bar {
+        margin-left: -490px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .franchise_bar {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 16px 0;
+        background-color: #a5031b;
+        text-align: center;
+    }
+
+    .franchise_bar > a {
+        font-size: 16px;
+        color: #fff;
+        display: inline-block;
+        padding-right: 15px;
+        background: url(../images/mobile_arrow_franchise.png) 100% 50% no-repeat;
+        background-size: 8px;
+    }
+
+    .franchise_bar > a > img {
+        display: none;
+    }
+}
