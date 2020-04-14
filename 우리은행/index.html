@@ -1,0 +1,1016 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 우리은행 리뉴얼 </title>
+    <link rel="stylesheet" href="CSS/master.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="CSS/swiper.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/fms.js"></script>
+    <script src="js/fav.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/quick_menu.js"></script>
+    <script src="js/img_slide.js"></script>
+    <script src="js/rule.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/header.js"></script>
+    <!-- Demo styles -->
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            padding-top: 161px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            padding-bottom: 80px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide.color1 {
+            background-color: #d3f0fe;
+        }
+
+        .swiper-slide.color2 {
+            background-color: #fa9d95;
+        }
+
+        .swiper-slide.color3 {
+            background-color: #b6deff;
+        }
+
+        .swiper-slide.color4 {
+            background-color: #fee1a2;
+        }
+
+        .swiper-slide.color5 {
+            background-color: #efffdc;
+        }
+
+        @media screen and (max-width: 979px) {
+            .swiper-slide img {
+                width: 100%;
+            }
+
+            .swiper-container {
+                top: 0px;
+                padding-top: 55px;
+            }
+        }
+
+    </style>
+    <script>
+        $(document).on('click', 'a[href="#"]', function(e) {
+            e.preventDefault();
+        });
+
+    </script>
+</head>
+
+<body>
+    <input id="toggle_menu" type="checkbox" />
+    <header id="header_wrap">
+        <h1 class="mob_logo"><a href="#"><img src="images/h1_01.png"></a></h1>
+        <label class="toggle_menu" for="toggle_menu"></label>
+        <div class="mob_ver_wrap">
+            <div class="header">
+                <label class="close_btn" for="toggle_menu"></label>
+                <div class="mob_ver_wrap1">
+                    <div class="logo">
+                        <h1><a href="#"><img class="pc_ver" src="images/h1_01.png" alt="로고" /><img class="mob_ver" src="images/mob_ver_logo.png" alt="로고" /></a></h1>
+                        <ul>
+                            <li class="on"><span><a href="#">개인</a></span></li>
+                            <li><span><a href="#">기업</a></span></li>
+                            <li><span><a href="#">카드</a></span></li>
+                        </ul>
+                    </div>
+                    <div id="session_info_new">
+                        <h4>로그인/로그아웃 정보</h4>
+                        <div id="header_login">
+                            <ul class="btn">
+                                <li class="time"><a href="#"><span>로그인</span></a></li>
+                                <li class="login"><a href="#"><span>공인인증센터</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="utilmenu_new">
+                        <h4>유틸메뉴</h4>
+                        <div class="global_menu">
+                            <a href="#" class="global_menu_btn">Language</a>
+                            <ul>
+                                <li class="country_01"><a href="#">English</a></li>
+                                <li class="country_02"><a href="#">日本語</a></li>
+                                <li class="country_03"><a href="#">中國語</a></li>
+                                <li class="country_04"><a href="#">Vietnam</a></li>
+                                <li class="country_05"><a href="#">ไทย</a></li>
+                                <li class="country_06"><a href="#">Indonesia</a></li>
+                                <li class="country_07"><a href="#">Россия</a></li>
+                                <li class="country_08"><a href="#">МОНГОЛ</a></li>
+                                <li class="country_09"><a href="#">Cambodia</a></li>
+                                <li><a href="#">business(Eng)</a></li>
+                                <li><a href="#">About NHBank</a></li>
+                            </ul>
+                        </div>
+                        <ul class="ico_favorit">
+                            <li class="fav">
+                                <a href="#" class="tog_list">즐겨찾기</a>
+                                <div class="f_list">
+                                    <div class="f_top">
+                                    </div>
+                                    <div class="pre_fav_box">
+                                        <p class="txt_pre_login">로그인 후 이용 가능합니다.</p>
+                                        <a href="#" class="btn_pre_close close">즐겨찾기목록 닫기</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="ico_search">
+                            <a href="#" class="btn_search_open"><img src="images/btn_header_search.gif" alt="검색" /></a>
+                        </div>
+                    </div>
+                    <div id="globalmenu_bottom">
+                        <h4>외환, 퇴직연금, 보안센터, 고객센터 메뉴</h4>
+                        <ul class="menu">
+                            <li id="title1"><a href="#">외환</a></li>
+                            <li id="title2"><a href="#">퇴직연금</a></li>
+                            <li id="title3"><a href="#">보안센터</a></li>
+                            <li id="title4"><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="search_box_area">
+                    <div class="search_box_area">
+                        <div class="mask"></div>
+                        <div class="search_inner_bg">
+                            <div class="search_inner_box">
+                                <div id="search_new">
+                                    <form id="searchfrm" name="searchfrm" method="post" onsubmit="returen false">
+                                        <fieldset>
+                                            <legend>검색</legend>
+                                            <div class="input_box">
+                                                <input data-type="text-input" type="text" class="text" id="query" name="query" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요" autocomplete="off" data-converted="true">
+                                                <input type="image" class="image" src="images/btn_search_new.png" alt="검색" title="검색" id="searchbtn" name="searchbtn">
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <dl class="search_select_box">
+                                        <dt>테마검색</dt>
+                                        <dd>
+                                            <ul class="serach_select_list">
+                                                <li><a href="#">컬쳐홀릭</a></li>
+                                                <li><a href="#">컬쳐홀릭</a></li>
+                                                <li><a href="#">컬쳐홀릭</a></li>
+                                                <li><a href="#">컬쳐홀릭</a></li>
+                                                <li><a href="#">컬쳐홀릭</a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <a class="btn_search_close"><img src="images/btn_search_close.gif" alt="닫기" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head_gnb">
+                <h4>주메뉴</h4>
+                <div class="mask"></div>
+                <div class="gnb_list_lay">
+                    <div class="gnb_box">
+                        <ul id="gnb_com">
+                            <li>
+                                <a class="pc_ver" href="#"><span>개인</span></a>
+                                <h3 class="mob_ver icon1 icon_color">개인</h3>
+                                <ul class="sub mob_open">
+                                    <a href="#">개인뱅킹</a>
+                                    <li>
+                                        <h3>조회</h3>
+                                        <ul>
+                                            <li><a href="#">계좌조회</a></li>
+                                            <li><a href="#">거래내역조회</a></li>
+                                            <li><a href="#">수표/어음조회</a></li>
+                                            <li><a href="#">전자어음조회</a></li>
+                                            <li><a href="#">기타조회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>이체</h3>
+                                        <ul>
+                                            <li><a href="#">자금이체</a></li>
+                                            <li><a href="#">이체결과조회</a></li>
+                                            <li><a href="#">자동이체</a></li>
+                                            <li><a href="#">제휴기관이체</a></li>
+                                            <li><a href="#">기타이체</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>공과금</h3>
+                                        <ul>
+                                            <li><a href="#">지로/CMS/펌뱅킹</a></li>
+                                            <li><a href="#">지방세</a></li>
+                                            <li><a href="#">국고/관세</a></li>
+                                            <li><a href="#">생활요금/기타</a></li>
+                                            <li><a href="#">연금/보험료</a></li>
+                                            <li><a href="#">등록금</a></li>
+                                            <li><a href="#">법원비용</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>예금/신탁</h3>
+                                        <ul>
+                                            <li><a href="#">예금/신탁조회</a></li>
+                                            <li><a href="#">예금신규</a></li>
+                                            <li><a href="#">예금해지/분할지급</a></li>
+                                            <li><a href="#">예금계좌관리</a></li>
+                                            <li><a href="#">기타계좌관리</a></li>
+                                            <li><a href="#">예금전환</a></li>
+                                            <li><a href="#">예약신규</a></li>
+                                            <li><a href="#">신탁신규가입</a></li>
+                                            <li><a href="#">신탁해지</a></li>
+                                            <li><a href="#">개인IRP신규</a></li>
+                                            <li><a href="#">연금개시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>펀드</h3>
+                                        <ul>
+                                            <li><a href="#">펀드조회</a></li>
+                                            <li><a href="#">펀드신규</a></li>
+                                            <li><a href="#">연금펀드신규</a></li>
+                                            <li><a href="#">펀드매수</a></li>
+                                            <li><a href="#">펀드환매</a></li>
+                                            <li><a href="#">펀드판매사이동</a></li>
+                                            <li><a href="#">(구)연금펀드전환</a></li>
+                                            <li><a href="#">펀드관리서비스</a></li>
+                                            <li><a href="#">펀드자동이체서비스</a></li>
+                                            <li><a href="#">펀드자동환매서비스</a></li>
+                                            <li><a href="#">펀드오토리밸런싱서비스</a></li>
+                                            <li><a href="#">연금펀드개시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>퇴직연금</h3>
+                                        <ul>
+                                            <li><a href="#">회원정보관리</a></li>
+                                            <li><a href="#">자산현황</a></li>
+                                            <li><a href="#">상품운용</a></li>
+                                            <li><a href="#">지급해지</a></li>
+                                            <li><a href="#">개인IRP신규개설</a></li>
+                                            <li><a href="#">상품안내</a></li>
+                                            <li><a href="#">펀드상품</a></li>
+                                            <li><a href="#">기준가/수익률조회</a></li>
+                                            <li><a href="#">우리경제동향</a></li>
+                                            <li><a href="#">연금계좌이체</a></li>
+                                            <li><a href="#">퇴직연금펀드자동환매서비스</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>보험</h3>
+                                        <ul>
+                                            <li><a href="#">보험조회</a></li>
+                                            <li><a href="#">보험조회</a></li>
+                                            <li><a href="#">보험입금</a></li>
+                                            <li><a href="#">보험가이드</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>대출</h3>
+                                        <ul>
+                                            <li><a href="#">대출조회</a></li>
+                                            <li><a href="#">이자납입</a></li>
+                                            <li><a href="#">원금상환/한도해지</a></li>
+                                            <li><a href="#">대출계약 철회권신청</a></li>
+                                            <li><a href="#">인터넷대출신청</a></li>
+                                            <li><a href="#">대출상담</a></li>
+                                            <li><a href="#">인터넷대출실행</a></li>
+                                            <li><a href="#">기간연장</a></li>
+                                            <li><a href="#">대출약정(지점신천고객)</a></li>
+                                            <li><a href="#">인증 및 동의</a></li>
+                                            <li><a href="#">금리인하요구권</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>외환/골드</h3>
+                                        <ul>
+                                            <li><a href="#">환율조회</a></li>
+                                            <li><a href="#">인터넷환전</a></li>
+                                            <li><a href="#">해외송금</a></li>
+                                            <li><a href="#">국내외화이체</a></li>
+                                            <li><a href="#">FX트레이딩</a></li>
+                                            <li><a href="#">외화예금</a></li>
+                                            <li><a href="#">골드뱅킹</a></li>
+                                            <li><a href="#">우리AUTOFX</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>뱅킹관리</h3>
+                                        <ul>
+                                            <li><a href="#">뱅킹계좌관리</a></li>
+                                            <li><a href="#">인터넷뱅킹관리</a></li>
+                                            <li><a href="#">증명서발급</a></li>
+                                            <li><a href="#">보안관리</a></li>
+                                            <li><a href="#">분실신고</a></li>
+                                            <li><a href="#">통지서비스</a></li>
+                                            <li><a href="#">더 간편뱅킹</a></li>
+                                            <li><a href="#">영업점업무예약서비스</a></li>
+                                            <li><a href="#">소득공제대상 등록/해제</a></li>
+                                            <li><a href="#">기타서비스</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>ISA</h3>
+                                        <ul>
+                                            <li><a href="#">신탁형 상품안내</a></li>
+                                            <li><a href="#">신탁형 자산운용</a></li>
+                                            <li><a href="#">신탁형 계좌관리</a></li>
+                                            <li><a href="#">일임형 가입자격 확인신청</a></li>
+                                            <li><a href="#">일임형 신규</a></li>
+                                            <li><a href="#">일임형 수익률 바로보기</a></li>
+                                            <li><a href="#">일임형 계좌종합정보</a></li>
+                                            <li><a href="#">일임형 모델포트폴리오변경</a></li>
+                                            <li><a href="#">일임형 안내 방법 변경</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="pc_ver" href="#"><span>기업</span></a>
+                                <h3 class="mob_ver icon2">기업</h3>
+                                <ul class="sub">
+                                    <a href="#">기업뱅킹</a>
+                                    <li>
+                                        <h3>조회</h3>
+                                        <ul>
+                                            <li><a href="#">계좌조회</a></li>
+                                            <li><a href="#">거래내역조회</a></li>
+                                            <li><a href="#">이체수수료내역조회</a></li>
+                                            <li><a href="#">금융정보조회</a></li>
+                                            <li><a href="#">수수료면제조회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>이체</h3>
+                                        <ul>
+                                            <li><a href="#">자금이체</a></li>
+                                            <li><a href="#">이체결과조회</a></li>
+                                            <li><a href="#">대량/급여이체</a></li>
+                                            <li><a href="#">자동이체</a></li>
+                                            <li><a href="#">자동송금</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>공과금</h3>
+                                        <ul>
+                                            <li><a href="#">지로/CMS/펌뱅킹</a></li>
+                                            <li><a href="#">지방세</a></li>
+                                            <li><a href="#">국고/관세</a></li>
+                                            <li><a href="#">생활요금/기타</a></li>
+                                            <li><a href="#">연금/보험료</a></li>
+                                            <li><a href="#">법원비용</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>전자결제</h3>
+                                        <ul>
+                                            <li><a href="#">B2B대출</a></li>
+                                            <li><a href="#">구매자금대출</a></li>
+                                            <li><a href="#">e-구매상품</a></li>
+                                            <li><a href="#">주류구매</a></li>
+                                            <li><a href="#">네트워크론</a></li>
+                                            <li><a href="#">전자어음/채권</a></li>
+                                            <li><a href="#">단기수요자금융</a></li>
+                                            <li><a href="#">약정내역통합조회</a></li>
+                                            <li><a href="#">바로드림대출</a></li>
+                                            <li><a href="#">세금계산서</a></li>
+                                            <li><a href="#">전자결제가이드</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>수표어음</h3>
+                                        <ul>
+                                            <li><a href="#">수표어음신청/조회</a></li>
+                                            <li><a href="#">받을어음</a></li>
+                                            <li><a href="#">할인어음</a></li>
+                                            <li><a href="#">자기앞수표조회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>자금관리</h3>
+                                        <ul>
+                                            <li><a href="#">기업자금관리</a></li>
+                                            <li><a href="#">중소·소호자금관리</a></li>
+                                            <li><a href="#">웹펌뱅킹</a></li>
+                                            <li><a href="#">WIN-CMS</a></li>
+                                            <li><a href="#">WIN-CARD Manager</a></li>
+                                            <li><a href="#">우리ERP</a></li>
+                                            <li><a href="#">비영리단체ERP</a></li>
+                                            <li><a href="#">우리윈스퀘어</a></li>
+                                            <li><a href="#">우리모아드림</a></li>
+                                            <li><a href="#">등록금관리</a></li>
+                                            <li><a href="#">전자금융수수료/기타</a></li>
+                                            <li><a href="#">사채원리금수납</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>예금/신탁</h3>
+                                        <ul>
+                                            <li><a href="#">예금/신탁조회</a></li>
+                                            <li><a href="#">예금신규</a></li>
+                                            <li><a href="#">입금/지급/해지</a></li>
+                                            <li><a href="#">퇴직신탁</a></li>
+                                            <li><a href="#">자금관리특정금전신탁</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>대출</h3>
+                                        <ul>
+                                            <li><a href="#">대출조회</a></li>
+                                            <li><a href="#">이자납입</a></li>
+                                            <li><a href="#">원금상환/한도해지</a></li>
+                                            <li><a href="#">한도미사용수수료</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>펀드/보험</h3>
+                                        <ul>
+                                            <li><a href="#">펀드조회</a></li>
+                                            <li><a href="#">펀드신규</a></li>
+                                            <li><a href="#">펀드매수</a></li>
+                                            <li><a href="#">펀드환매</a></li>
+                                            <li><a href="#">펀드판매사이동</a></li>
+                                            <li><a href="#">보험조회</a></li>
+                                            <li><a href="#">펀드관리서비스</a></li>
+                                            <li><a href="#">펀드자동이체서비스</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>외환</h3>
+                                        <ul>
+                                            <li><a href="#">환율</a></li>
+                                            <li><a href="#">해외송금</a></li>
+                                            <li><a href="#">국내외화이체</a></li>
+                                            <li><a href="#">외화예금/대출</a></li>
+                                            <li><a href="#">WEB방식신용장개설</a></li>
+                                            <li><a href="#">수출입전자무역</a></li>
+                                            <li><a href="#">수입</a></li>
+                                            <li><a href="#">수출</a></li>
+                                            <li><a href="#">무역금융</a></li>
+                                            <li><a href="#">내국신용장</a></li>
+                                            <li><a href="#">현물환(FX트레이딩)</a></li>
+                                            <li><a href="#">선물환</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>퇴직연금</h3>
+                                        <ul>
+                                            <li><a href="#">퇴직연금</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>뱅킹관리</h3>
+                                        <ul>
+                                            <li><a href="#">뱅킹관리</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="pc_ver" href="#"><span>금융상품</span></a>
+                                <h3 class="mob_ver icon3">금융상품</h3>
+                                <ul class="sub">
+                                    <a href="#">금융상품</a>
+                                    <li>
+                                        <h3>추천상품</h3>
+                                        <ul>
+                                            <li><a href="#">우리HOT!상품</a></li>
+                                            <li><a href="#">패키지상품</a></li>
+                                            <li><a href="#">내가찾는상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>예금</h3>
+                                        <ul>
+                                            <li><a href="#">예금</a></li>
+                                            <li><a href="#">예금상품</a></li>
+                                            <li><a href="#">예금가이드</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>대출</h3>
+                                        <ul>
+                                            <li><a href="#">대출</a></li>
+                                            <li><a href="#">대출상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>외환</h3>
+                                        <ul>
+                                            <li><a href="#">외환</a></li>
+                                            <li><a href="#">외환예금 상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>펀드</h3>
+                                        <ul>
+                                            <li><a href="#">펀드신규</a></li>
+                                            <li><a href="#">연금펀드</a></li>
+                                            <li><a href="#">로보.전문가설계</a></li>
+                                            <li><a href="#">재무설계</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>신탁</h3>
+                                        <ul>
+                                            <li><a href="#">신탁상품</a></li>
+                                            <li><a href="#">신탁가이드</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>보험</h3>
+                                        <ul>
+                                            <li><a href="#">보험상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>퇴직연금</h3>
+                                        <ul>
+                                            <li><a href="#">퇴직연금 상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>골드</h3>
+                                        <ul>
+                                            <li><a href="#">골드뱅킹</a></li>
+                                            <li><a href="#">골드/실버바</a></li>
+                                            <li><a href="#">골드가이드</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>ISA</h3>
+                                        <ul>
+                                            <li><a href="#">신탁형 ISA</a></li>
+                                            <li><a href="#">일임형 ISA</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="pc_ver" href="#"><span>카드</span></a>
+                                <h3 class="mob_ver icon4">카드</h3>
+                                <ul class="sub">
+                                    <a href="#">카드</a>
+                                    <li>
+                                        <h3>나의카드</h3>
+                                        <ul>
+                                            <li><a href="#">카드이용조회</a></li>
+                                            <li><a href="#">회원정보관리</a></li>
+                                            <li><a href="#">이용한도</a></li>
+                                            <li><a href="#">이용금액결제</a></li>
+                                            <li><a href="#">결제정보변경</a></li>
+                                            <li><a href="#">분실신고/재발급/해지</a></li>
+                                            <li><a href="#">카드사용등록/해제</a></li>
+                                            <li><a href="#">해외사용등록/해제</a></li>
+                                            <li><a href="#">우리v클럽</a></li>
+                                            <li><a href="#">증명서 조회 및 발급</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>카드안내·신청</h3>
+                                        <ul>
+                                            <li><a href="#">카드신청</a></li>
+                                            <li><a href="#">맞춤카드안내·신청</a></li>
+                                            <li><a href="#">간편신청</a></li>
+                                            <li><a href="#">빠른발급신청</a></li>
+                                            <li><a href="#">발급안내/신청결과조회</a></li>
+                                            <li><a href="#">선불카드</a></li>
+                                            <li><a href="#">기프트(바우처)신청/조회</a></li>
+                                            <li><a href="#">카드이용가이드</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>금융서비스</h3>
+                                        <ul>
+                                            <li><a href="#">단기카드대출(현금서비스)</a></li>
+                                            <li><a href="#">장기카드대출(카드론)</a></li>
+                                            <li><a href="#">일부결제금액이월약정(리볼빙)</a></li>
+                                            <li><a href="#">올인원대출/신용대출</a></li>
+                                            <li><a href="#">납부서비스</a></li>
+                                            <li><a href="#">플러스서비스</a></li>
+                                            <li><a href="#">장기카드대출(대환대출)</a></li>
+                                            <li><a href="#">금융서비스 이벤트</a></li>
+                                            <li><a href="#">금리인하요구권</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>자동차</h3>
+                                        <ul>
+                                            <li><a href="#">다이렉트자동차할부신청</a></li>
+                                            <li><a href="#">자동차할부·론</a></li>
+                                            <li><a href="#">자동차리스</a></li>
+                                            <li><a href="#">자동차렌트</a></li>
+                                            <li><a href="#">오토캐시백(일시불)</a></li>
+                                            <li><a href="#">월납입금예상조회</a></li>
+                                            <li><a href="#">이용내역조회/상환신청</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>포인트</h3>
+                                        <ul>
+                                            <li><a href="#">나의포인트</a></li>
+                                            <li><a href="#">포인트안내</a></li>
+                                            <li><a href="#">위비꿀머니(모아포인트)사용처</a></li>
+                                            <li><a href="#">포인트연계할부(세이브)</a></li>
+                                            <li><a href="#">포인트기부</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>카드라이프</h3>
+                                        <ul>
+                                            <li><a href="#">항공/여행</a></li>
+                                            <li><a href="#">해외이용</a></li>
+                                            <li><a href="#">골프</a></li>
+                                            <li><a href="#">웨딩</a></li>
+                                            <li><a href="#">반려동물</a></li>
+                                            <li><a href="#">렌탈</a></li>
+                                            <li><a href="#">리빙</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>모바일라이프</h3>
+                                        <ul>
+                                            <li><a href="#">우리페이</a></li>
+                                            <li><a href="#">스마트앱</a></li>
+                                            <li><a href="#">결제/인증</a></li>
+                                            <li><a href="#">스마트폰인증서복사</a></li>
+                                            <li><a href="#">NHN</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>우리카드센터</h3>
+                                        <ul>
+                                            <li><a href="#">우리뉴스</a></li>
+                                            <li><a href="#">고객센터</a></li>
+                                            <li><a href="#">소비자포털</a></li>
+                                            <li><a href="#">이벤트</a></li>
+                                            <li><a href="#">회사소개</a></li>
+                                            <li><a href="#">인재채용</a></li>
+                                            <li><a href="#">ENGLISH CENTER</a></li>
+                                            <li><a href="#">우리가족광장</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="mask"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide color1"><img src="images/new_main_banner0120_01.png" alt="배너1" /></div>
+            <div class="swiper-slide color2"><img src="images/new_main_banner1224_02.png" alt="배너2" /></div>
+            <div class="swiper-slide color3"><img src="images/new_main_banner1224_03.png" alt="배너3" /></div>
+            <div class="swiper-slide color4"><img src="images/new_main_banner1224_05.png" alt="배너4" /></div>
+            <div class="swiper-slide color5"><img src="images/new_main_banner1224_06.png" alt="배너5" /></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+
+    <div id="container">
+        <section class="prod">
+            <div class="mob_ver">
+                <h3>금융상품</h3>
+                <ul>
+                    <li class="prod_icon1"><a href="#">인기</a></li>
+                    <li class="prod_icon2"><a href="#">예금</a></li>
+                    <li class="prod_icon3"><a href="#">펀드</a></li>
+                    <li class="prod_icon4"><a href="#">대출</a></li>
+                    <li class="prod_icon5"><a href="#">신탁</a></li>
+                    <li class="prod_icon6"><a href="#">보험/공제</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="store">
+            <div class="mob_ver">
+                <h3>지점찾기</h3>
+                <p>가까운 지점을 찾아보세요.</p>
+                <a href="#"></a>
+            </div>
+        </section>
+        <section class="quick_menu">
+            <ul class="list">
+                <li class="list_1"><a href="#"><span>계좌조회</span></a></li>
+                <li class="list_2"><a href="#"><span>거래내역</span></a></li>
+                <li class="list_3"><a href="#"><span>즉시이체</span></a></li>
+                <li class="list_4"><a href="#"><span>펀뱅크</span></a></li>
+                <li class="list_5">
+                    <a href="#"><span>예금가입</span></a>
+                    <ul class="hover">
+                        <li><a href="#">우리은행</a></li>
+                        <li><a href="#">신탁/조회</a></li>
+                        <li class="last"><span>예금가입</span></li>
+                    </ul>
+                </li>
+                <li class="list_6">
+                    <a href="#"><span>펀드가입</span></a>
+                    <ul class="hover">
+                        <li><a href="#">우리은행</a></li>
+                        <li><a href="#">펀드조회</a></li>
+                        <li class="last"><span>펀드가입</span></li>
+                    </ul>
+                </li>
+                <li class="list_7">
+                    <a href="#"><span>대출가입</span></a>
+                    <ul class="hover">
+                        <li><a href="#">우리은행</a></li>
+                        <li><a href="#">대출조회</a></li>
+                        <li class="last"><span>대출가입</span></li>
+                    </ul>
+                </li>
+                <li class="list_8">
+                    <a href="#"><span>빠른조회</span></a>
+                    <ul class="hover">
+                        <li><a href="#">거래내역</a></li>
+                        <li><a href="#">계좌조회</a></li>
+                        <li><a href="#">잔액조회</a></li>
+                        <li><a href="#">예금잔액조회서</a></li>
+                        <li><a href="#">기타조회</a></li>
+                        <li><a href="#">대학등록금납부</a></li>
+                        <li class="last"><span>빠른조회</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="notics">
+            <div class="news">
+                <h2>새소식</h2>
+                <ul class="list_board">
+                    <li>
+                        <a href="#"><span>[공지] 인터넷뱅킹 등 시스템 정기점검 안내</span><em>[NEW]</em><span>2020.02.04</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span>[공지] 우리 WON 오픈뱅킹 서비스 안내</span><span>2019.12.18</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span>[공지] 인터넷뱅킹을 통한 연말정산 증명서 ...</span><span>2019.12.10</span></a>
+                    </li>
+                </ul>
+                <a href="#">바로가기</a>
+            </div>
+            <div class="event">
+                <h2>이벤트</h2>
+                <ul class="list_board">
+                    <li>
+                        <a href="#"><span>우리 WON 오픈뱅킹 그랜드 오픈 기념 이벤트</span><em>[NEW]</em></a>
+                    </li>
+                    <li>
+                        <a href="#"><span>우리고객님을 위한 신년맞이 이벤트!</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span>온국민환전 『온국민 90% 환율우대 이벤트</span></a>
+                    </li>
+                </ul>
+                <a href="#">바로가기</a>
+            </div>
+        </section>
+        <section class="sns_group mob_ver">
+            <h3><a href="#">우리은행 SNS</a></h3>
+            <ul>
+                <li><a href="#"><strong>페이스북</strong>팔로우하기</a></li>
+                <li><a href="#"><strong>인스타그램</strong>팔로우하기</a></li>
+            </ul>
+        </section>
+        <section class="img_slide">
+            <div class="slide_wrap">
+                <ul class="img_slide_ul">
+                    <li><a href="#"><img src="images/img_sf02_20190725.png" alt="이미지슬라이드1" /></a></li>
+                    <li><a href="#"><img src="images/img_sf02_woori_robo_main0904.png" alt="이미지슬라이드2" /></a></li>
+                    <li><a href="#"><img src="images/img_sf03_20190221.jpg" alt="이미지슬라이드3" /></a></li>
+                    <li><a href="#"><img src="images/img_sf05_20190725.png" alt="이미지슬라이드4" /></a></li>
+                    <li><a href="#"><img src="images/img_sf06_20150819.jpg" alt="이미지슬라이드5" /></a></li>
+                    <li><a href="#"><img src="images/sf_main_b_1_20190725.png" alt="이미지슬라이드6" /></a></li>
+                    <li><a href="#"><img src="images/sf_main_b_4_190916.gif" alt="이미지슬라이드7" /></a></li>
+                    <li><a href="#"><img src="images/sf_main_b_20190725.png" alt="이미지슬라이드8" /></a></li>
+                    <li><a href="#"><img src="images/sf_main_b_won_1908211.png" alt="이미지슬라이드9" /></a></li>
+                    <li><a href="#"><img src="images/img_sf02_20190725.png" alt="이미지슬라이드1" /></a></li>
+                    <li><a href="#"><img src="images/img_sf02_woori_robo_main0904.png" alt="이미지슬라이드2" /></a></li>
+                    <li><a href="#"><img src="images/img_sf03_20190221.jpg" alt="이미지슬라이드3" /></a></li>
+                </ul>
+            </div>
+            <div class="control">
+                <button class="imgbtn btn_prev"></button>
+                <button class="imgbtn btn_play off"></button>
+                <button class="imgbtn btn_stop"></button>
+                <button class="imgbtn btn_next"></button>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product_wrap">
+                <h2>금융상품</h2>
+                <ul class="product_list">
+                    <li class="list_01"><a href="#">예금</a></li>
+                    <li class="list_02"><a href="#">펀드</a></li>
+                    <li class="list_03"><a href="#">대출</a></li>
+                    <li class="list_04"><a href="#">신탁</a></li>
+                    <li class="list_05"><a href="#">ISA</a></li>
+                    <li class="list_06"><a href="#">보험/공제</a></li>
+                    <li class="list_07"><a href="#">골드</a></li>
+                </ul>
+                <a href="#">바로가기</a>
+            </div>
+        </section>
+        <section class="rule">
+            <div class="rule_01">
+                <h2>금융사고예방</h2>
+                <ul>
+                    <li>
+                        <a href="#"><strong>전자금융사기예방 서비스</strong>
+                            <span>각종 금융사기수법에 한층 강화된 다양한 전자금융사기예방 서비스로 안전한 인터넷뱅킹 사용이 가능합니다.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>통장(카드) 매매·양도는 불법</strong>
+                            <span>고객님의 자산을 보호하고 금융사기를 예방하기 위한 최선의 방법은 대포통장 근절입니다.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>사진촬영·QR스캔 절대금지</strong>
+                            <span>타인이 OTP/보안카드 번호를 요구 (2개 초과) 하는 경우는 금융사기이니 절대 응하지 마십시오.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rule_02">
+                <h2>소비자권익보호</h2>
+                <ul>
+                    <li>
+                        <a href="#">금융감독원 바로가기</a>
+                    </li>
+                    <li>
+                        <a href="#">미수령주식 찾아주기 캠페인</a>
+                    </li>
+                    <li class="toggle_area">
+                        <span>비교조회서비스<button type="button" title="접기"></button></span>
+                        <ul>
+                            <li><a href="#">은행금리비교</a></li>
+                            <li><a href="#">금융상품한눈에</a></li>
+                            <li><a href="#">금융소비자정보포털 '파인'</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="side_box">
+                <a href="#"></a>
+            </div>
+        </section>
+    </div>
+    <footer id="main_footer">
+        <div class="footer">
+            <div class="foot_area">
+                <h2 class="mob_ver"><a href="#"></a></h2>
+                <ul class="nav_fnb">
+                    <li><a href="#">이용상담</a></li>
+                    <li><a href="#">보안프로그램</a></li>
+                    <li><a href="#">사고신고</a></li>
+                    <li><a href="#">보호금융상품등록부</a></li>
+                    <li><a href="#"><strong>전자민원접수</strong></a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#"><strong>경영공시</strong></a></li>
+                    <li><a href="#">그룹 내 고객정보 제공안내</a></li>
+                    <li><a href="#">스튜어드십 코드</a></li>
+                </ul>
+
+                <div class="info_group">
+                    <ul class="info_list">
+                        <li class="fms_list">
+                            <a class="type1" href="#">패밀리사이트</a>
+                            <div class="fms">
+                                <ul>
+                                    <li><a href="#">우리금융지주</a></li>
+                                    <li><a href="#">우리에프아이에스</a></li>
+                                    <li><a href="#">우리신용정보</a></li>
+                                    <li><a href="#">우리다문화장학재단</a></li>
+                                    <li><a href="#">우리펀드서비스</a></li>
+                                    <li><a href="#">우리미소금융재단</a></li>
+                                    <li><a href="#">우리금융경영연구소</a></li>
+                                    <li><a href="#">우리종합금융</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col_list">
+                            <a class="type1" href="#">대표전화 1588-5000</a>
+                            <div class="col">
+                                <dl>
+                                    <dt>대표전화</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>1588-5000, 1599-5000</li>
+                                            <li><span>해외에서 국내로 걸 때</span>+82-2-2006-5000</li>
+                                        </ul>
+                                    </dd>
+                                    <dt>고객의 말씀</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>080-365-5000</li>
+                                            <li><span>휴대폰</span>02-2008-5000</li>
+                                        </ul>
+                                    </dd>
+                                    <dt>신규상담</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>예적금 1599-8100</li>
+                                            <li>대출 1599-8300</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="email">
+                            <a href="#"><span class="type1">이메일상담</span></a>
+                        </li>
+                        <li class="quick_list">
+                            <a class="type1" href="#">비교조회서비스</a>
+                            <div class="quick">
+                                <ul>
+                                    <li><a href="#">은행금리비교</a></li>
+                                    <li><a href="#">금융상품 한눈에</a></li>
+                                    <li><a href="#">금융소비자정보포털 '파인'</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info_sns">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <p class="copyright">
+                    COPYRIGHTS WOORI BANK. ALL RIGHTS RESERVED.
+                </p>
+
+                <ul class="info_mark">
+                    <li><a href="#">2019 웹 접근성 우수사이트</a></li>
+                    <li><a href="#">2019 고객감동경영대상 종합대상 12년 연속 수상</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

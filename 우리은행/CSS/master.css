@@ -1,0 +1,35 @@
+/* master.css */
+
+@import url('header.css') screen and (min-width: 980px);
+@import url('header_mobile.css') screen and (max-width: 979px);
+@import url('common.css');
+@import url('contents.css');
+@import url('footer_style.css');
+
+input#toggle_menu {
+    display: none;
+}
+
+h4 {
+    display: none;
+}
+
+@media screen and (min-width: 980px) {
+    .pc_ver {
+        display: block;
+    }
+
+    .mob_ver {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .pc_ver {
+        display: none;
+    }
+
+    .mob_ver {
+        display: block;
+    }
+}
