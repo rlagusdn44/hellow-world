@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 김현우 포토폴리오 </title>
+    <link rel="stylesheet" href="CSS/master.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.lettering-0.6.1.min.js"></script>
+    <script src="js/contents.js"></script>
+    <script src="js/contents2.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/works.js"></script>
+    <script src="js/mob_menu.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/window.js"></script>
+    <script src="js/work_click.js"></script>
+    <script src="js/work_list_slide.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2 id="logo"></h2>
+        <div>
+            <ul>
+                <li class="ho check"><a href="#">HOME</a></li>
+                <li class="ab"><a href="#">ABOUT</a></li>
+                <li class="wo"><a href="#">WORKS</a></li>
+                <li class="co"><a href="#">CONTACT</a></li>
+            </ul>
+            <label class="toggle_menu" for="toggle_menu"></label>
+        </div>
+    </header>
+    <input id="toggle_menu" type="checkbox" />
+    <div class="mob_menu">
+        <div class="mob_bg"></div>
+        <div class="menu_box">
+            <label class="toggle_close" for="toggle_menu"></label>
+            <ul>
+                <li class="ho check"><a href="#">HOME</a></li>
+                <li class="ab"><a href="#">ABOUT</a></li>
+                <li class="wo"><a href="#">WORKS</a></li>
+                <li class="co"><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <section id="contents_Wrap">
+        <ul class="contents_list">
+            <li class="home active">
+                <div class="bg_1">
+                    <span class="bg_img1"></span>
+                    <span class="bg_img2"></span>
+                </div>
+                <span class="text1 core">
+                    <p>김현우의</p>
+                </span>
+                <span class="text2 core">
+                    <p>포트폴리오 입니다.</p>
+                </span>
+                <span class="text3 core">
+                    <p>계속 공부하는 중입니다.</p>
+                </span>
+                <span class="text4 core">
+                    <p>김현우<span>포트폴리오</span></p>
+                </span>
+            </li>
+            <li class="about">
+                <div>
+                    <div>
+                        <span class="about_img3"></span>
+                        <span class="about_img3_1 about_bg"></span>
+                        <span class="about_img3_2 about_bg"></span>
+                    </div>
+                    <div>
+                        <span class="about_img4">
+                        </span>
+                        <span class="about_img4_1 about_bg"></span>
+                        <span class="about_img4_2 about_bg"></span>
+                    </div>
+                    <h1>ABOUT</h1>
+                    <div class="about_text">
+                        <p class="about_text1">이름: 김현우 생년:1993</p>
+                        <p class="about_text2">학력: 평택대학교(중퇴)<br />능력:HTML, CSS, Jquery</p>
+                    </div>
+                </div>
+            </li>
+            <li class="works">
+                <div class="works_list">
+                    <div>
+                        <span class="work1"><img class="pc_ver" src="images/work1.jpg" alt="우리은행" /><img class="mob_ver" src="images/work1_mob.jpg" alt="우리은행" /></span>
+                        <span class="work1_1">
+                            <span>
+                                <p>우리은행</p>
+                            </span>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="work2"><img class="pc_ver" src="images/work2.jpg" alt="우리은행" /><img class="mob_ver" src="images/work2_mob.jpg" alt="우리은행" /></span>
+                        <span class="work2_1">
+                            <span>
+                                <p>현대건설</p>
+                            </span>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="work3"><img class="pc_ver" src="images/work3.jpg" alt="우리은행" /><img class="mob_ver" src="images/work3_mob3.jpg" alt="우리은행" /></span>
+                        <span class="work3_1">
+                            <span>
+                                <p>투썸</p>
+                            </span>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="work4"><img class="pc_ver" src="images/work4.jpg" alt="롯데호텔리조트" /><img class="mob_ver" src="images/work4_mob.jpg" alt="롯데호텔리조트" /></span>
+                        <span class="work4_1"><span>
+                                <p>롯데호텔리조트</p>
+                            </span></span>
+                    </div>
+                    <div>
+                        <span class="work5"><img class="pc_ver" src="images/work5.jpg" alt="우리은행" /><img class="mob_ver" src="images/work5_mob.jpg" alt="서울대학교병원" /></span>
+                        <span class="work5_1">
+                            <span>
+                                <p>서울대학교병원</p>
+                            </span>
+                        </span>
+                    </div>
+                    <span class="btn_wrap">
+                        <button class="next_btn"></button>
+                        <button class="prev_btn"></button>
+                    </span>
+                </div>
+                <div class="work_list">
+                    <div class="detail de1">
+                        <div>
+                        </div>
+                        <span class="more"><a href="우리은행/index.html" target="_blank">보러가기</a></span>
+                    </div>
+                    <div class="detail de2">
+                        <div>
+                        </div>
+                        <span class="more"><a href="현대건설/index.html" target="_blank">보러가기</a></span>
+                    </div>
+                    <div class="detail de3">
+                        <div>
+                        </div>
+                        <span class="more"><a href="투썸/index.html" target="_blank">보러가기</a></span>
+                    </div>
+                    <div class="detail de4">
+                        <div>
+                        </div>
+                        <span class="more"><a href="롯데호텔리조트/index.html" target="_blank">보러가기</a></span>
+                    </div>
+                    <div class="detail de5">
+                        <div>
+                        </div>
+                        <span class="more"><a href="서울대학교병원/index.html" target="_blank">보러가기</a></span>
+                    </div>
+                    <button class="work_list_next"></button>
+                    <button class="work_list_prev"></button>
+                    <button class="work_close"></button>
+                </div>
+            </li>
+            <li class="contact">
+                <div>
+                    <h2></h2>
+                    <div class="email_box">
+                        <p>채용관련해서 문의하고 싶으시면
+                            <br /><a href="tel:010 - 9900 - 5719">010-9900-5719</a>
+                            으로 연락 주시거나 <br />아래를 통해 연락주세요.
+                        </p>
+                        <form method="POST" action="http://formspree.io/rlagusdn44@naver.com">
+                            <input id="name" type="text" name="name" placeholder="&nbsp; YOUR NAME">
+                            <input id="mail" type="email" name="email" placeholder="&nbsp; YOUR E-MAIL">
+                            <textarea name="message" placeholder="&nbsp; MESSAGE"></textarea>
+                            <button type="submit">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <button class="next"><span>NEXT</span></button>
+        <button class="prev"><span>PREV</span></button>
+    </section>
+
+
+
+</body>
+
+</html>
