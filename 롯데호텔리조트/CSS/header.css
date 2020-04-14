@@ -1,0 +1,855 @@
+/* header.css */
+header {
+    width: 100%;
+    height: 883px;
+    position: relative;
+    z-index: 6;
+}
+
+#header_wrap {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    transition-duration: 0.4s;
+}
+
+#header_wrap.on {
+    margin-top: -37px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.58);
+}
+
+#header_wrap.on .header_bottom_bg {
+    background: #fff;
+}
+
+#header_wrap.on .depth1 > li > a {
+    color: #000;
+}
+
+#header_wrap.on .depth1 > li:hover > a {
+    color: #fff;
+}
+
+#header_wrap.on .depth1 > li:hover {
+    background-color: #7f7f7f;
+}
+
+#header_top {
+    width: 1260px;
+    height: 37px;
+    margin: 0 auto;
+}
+
+#header_top > ul {
+    float: right;
+}
+
+#header_top > ul > li {
+    float: left;
+    display: block;
+    transition-duration: 0.4s;
+}
+
+#header_top > ul > li:hover {
+    background: #fff;
+}
+
+#header_top > ul > li > a {
+    font-size: 12px;
+    line-height: 37px;
+    color: #000;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.header_bottom_bg {
+    width: 100%;
+    height: 84px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#header_bottom {
+    width: 1260px;
+    height: 84px;
+    margin: 0 auto;
+}
+
+#header_bottom > h2 > .logo {
+    float: left;
+    background: url(../images/footer-brand-resort.png) no-repeat center center;
+    width: 168px;
+    height: 84px;
+    background-size: 100%;
+}
+
+#header_wrap.on #header_bottom > h2 > .logo {
+    float: left;
+    background: url(../images/logo_global.png) no-repeat center center;
+    ;
+    width: 168px;
+    height: 84px;
+    background-size: 100%;
+}
+
+.depth1 {
+    float: right;
+    position: relative;
+}
+
+.depth1 > li {
+    float: left;
+}
+
+.depth1 > li.open {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.depth1 > li > a {
+    display: block;
+    padding: 0 40px;
+    line-height: 84px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+
+.depth1 > li > h3 {
+    display: none;
+    cursor: pointer;
+}
+
+.depth1 > li.open > a {
+    color: #666;
+}
+
+.depth2 {
+    position: absolute;
+    width: 920px;
+    height: 270px;
+    opacity: 0;
+    transform: translate(0, 20px);
+    right: 0;
+    background: #fff;
+    visibility: hidden;
+}
+
+.depth1 > li.open .depth2 {
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.58);
+    transition-duration: 0.3s;
+}
+
+.menu_title {
+    width: 100%;
+    text-align: left;
+    height: 50px;
+    position: relative;
+}
+
+.menu_title:before,
+.menu_title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+}
+
+.menu_title:before {
+    background: rgba(255, 255, 255, 0.6);
+    transition-duration: 0.4s;
+    z-index: 2;
+}
+
+.menu_title:after {
+    background: rgba(0, 0, 0, 0.6);
+    transition-duration: 0.5s;
+    z-index: 3;
+}
+
+.depth1 > li.open .menu_title:before {
+    width: 100%;
+}
+
+.depth1 > li.open .menu_title:after {
+    width: 100%;
+    ;
+}
+
+.menu_title > a {
+    color: #fff;
+    line-height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    position: relative;
+    display: inline-block;
+    padding-right: 30px;
+    z-index: 4;
+}
+
+.menu_title > a:before {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #bbb;
+    border-radius: 25px;
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 5;
+}
+
+.menu_title > a:after {
+    width: 8px;
+    height: 8px;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    border-color: #333;
+    transform: rotate(-135deg);
+    right: 9px;
+    bottom: 19px;
+    content: '';
+    position: absolute;
+    z-index: 5;
+}
+
+.thume {
+    width: 350px;
+    height: 220px;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.thume > span {
+    display: block;
+    width: 330px;
+    height: 200px;
+}
+
+.thume > .thum_1 {
+    background: url(../images/menu_img1.jpg) no-repeat;
+}
+
+.thume > .thum_2 {
+    background: url(../images/menu_img3.jpg) no-repeat;
+}
+
+.thume > .thum_3 {
+    background: url(../images/menu_img4.jpg) no-repeat;
+}
+
+.thume > .thum_4 {
+    background: url(../images/menu_img2.jpg) no-repeat;
+}
+
+.depth2 > ul {
+    width: 570px;
+    float: right;
+    height: 220px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.depth2 > ul > li {
+    width: 160px;
+    position: relative;
+    display: block;
+}
+
+.depth2 > ul > li:before,
+.depth2 > ul > li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+}
+
+.depth2 > ul > li:before {
+    transition-duration: 0.4s;
+    background-color: pink;
+    z-index: 1;
+}
+
+.depth2 > ul > li:after {
+    transition-duration: 0.6s;
+    background-color: #666;
+    z-index: 2;
+}
+
+.depth2 > ul > li:hover:before {
+    width: 120px;
+}
+
+.depth2 > ul > li:hover:after {
+    width: 100%;
+}
+
+.depth2 > ul > li > a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+    position: relative;
+    z-index: 3;
+    padding-left: 10px;
+}
+
+.depth2 > ul > li > a:hover {
+    color: #fff;
+}
+
+label.toggle_menu {
+    width: 45px;
+    height: 45px;
+    float: right;
+    background: url(../images/gnb_ic_navbar.png)no-repeat center center;
+    display: none;
+}
+
+input#toggle_menu:checked + header .depth1 {
+    right: 0;
+    z-index: 8;
+}
+
+input#toggle_menu:checked + header label.toggle_menu {
+    background: url(../images/close_btn2.png) no-repeat center center;
+}
+
+input#toggle_menu:checked + header #header_wrap.on label.toggle_menu {
+    background: url(../images/close_btn.png) no-repeat center center;
+}
+
+@media screen and (max-width: 1259px) {
+    #header_wrap.on {
+        margin-top: 0;
+    }
+
+    #header_wrap.on #header_bottom > h2 > .logo {
+        float: left;
+        background: url(../images/logo_m_global.png) no-repeat center center;
+        width: 209px;
+        height: 45px;
+        background-size: 100%;
+    }
+
+    #header_top {
+        display: none;
+    }
+
+    .header_bottom_bg {
+        height: 65px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+    #header_bottom {
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        height: 950px;
+    }
+
+    #header_bottom > h2 > .logo {
+        width: 168px;
+        height: 45px;
+        background-size: 100%;
+    }
+
+    .depth1 {
+        position: fixed;
+        width: 270px;
+        top: 65px;
+        bottom: 0;
+        background: #555;
+        right: -270px;
+        transition-duration: 0.3s;
+    }
+
+    .depth1 > li {
+        float: none;
+        height: 41px;
+        overflow: hidden;
+    }
+
+    .depth1 > li.on {
+        height: auto;
+    }
+
+    .depth1 > li > a {
+        line-height: 21px;
+        padding: 10px 40px 10px 20px;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .depth1 > li > h3 {
+        display: block;
+        line-height: 21px;
+        padding: 10px 40px 10px 20px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    .depth1 > li > h3:hover {
+        background: #fff;
+        color: #000;
+    }
+
+    .depth1 > li .depth2 {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+        height: auto;
+        overflow: hidden;
+        display: block;
+    }
+
+    .depth1 > li.on .depth2 {}
+
+    .depth2 {
+        position: static;
+        width: 270px;
+        height: 0;
+    }
+
+    .thume {
+        display: none;
+    }
+
+    .depth2 > ul {
+        width: 270px;
+        float: none;
+        height: auto;
+        background: #999;
+        padding: 0;
+    }
+
+    .depth2 > ul > li {
+        width: 100%;
+        height: 0;
+    }
+
+    .depth1 > li.on .depth2 > ul > li {
+        height: 41px;
+        transition-duration: 0.3s;
+    }
+
+    .depth2 > ul > li:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .depth2 > ul > li:before,
+    .depth2 > ul > li:after {
+        display: none;
+    }
+
+    .depth2 > ul > li > a {
+        color: #fff;
+        font-size: 14px;
+        padding-left: 25px;
+        line-height: 41px;
+    }
+
+    .depth2 > ul > li > a:hover {
+        color: #000;
+        background: #fff;
+    }
+
+    .menu_title {
+        display: none;
+    }
+
+    label.toggle_menu {
+        display: block;
+    }
+
+    #header_wrap.on label.toggle_menu {
+        background: url(../images/gnb_ic_navbar2.png)no-repeat center center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 910px;
+    }
+}
+
+
+.check_availability {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: #3c4452;
+    bottom: 0;
+    z-index: 5;
+}
+
+.check_availability > div {
+    width: 1260px;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.check_title {
+    width: 16.66666667%;
+    float: left;
+}
+
+.check_title > h2 {
+    color: #e1bd85;
+    font-size: 25px;
+    font-weight: normal;
+    position: relative;
+    padding-left: 60px;
+    line-height: 1;
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+
+.check_title > h2:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 34px;
+    top: 3px;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    background: url(../images/check.png);
+}
+
+.calender_wrap {
+    width: 83.33333333%;
+    float: left;
+    text-align: center;
+    margin-top: 26px;
+    position: relative;
+}
+
+.cal1 {
+    display: inline-block;
+}
+
+.group_button {
+    display: inline-block;
+}
+
+.calender_check {
+    width: 200px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.calender_check > input {
+    border-color: #a0a0a0;
+    color: #e1bd85;
+    font-size: 16px;
+    padding: 0 30px 0 10px;
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #fff;
+    height: 40px;
+    line-height: 36px;
+}
+
+.calender_check > i {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    background: url(../images/calender.png)no-repeat center center;
+    width: 15px;
+    height: 15px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.calender_out {
+    width: 200px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.calender_out > input {
+    border-color: #a0a0a0;
+    color: #e1bd85;
+    font-size: 16px;
+    padding: 0 30px 0 10px;
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #fff;
+    height: 40px;
+    line-height: 36px;
+}
+
+.calender_out > i {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    background: url(../images/calender.png)no-repeat center center;
+    width: 15px;
+    height: 15px;
+}
+
+.group_btn {
+    margin-right: 20px;
+    width: 110px;
+    float: none;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #fff;
+    height: 40px;
+    line-height: 36px;
+    text-align: left;
+    padding: 0 12px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.group_btn > span {
+    font-size: 13px;
+    color: #fff;
+}
+
+.group_btn > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    max-height: 451px;
+    overflow: hidden;
+    min-height: 114px;
+    min-width: 100%;
+    text-align: left;
+}
+
+.group_btn > .group_depth.on {
+    display: block;
+}
+
+.group_btn > ul > li:hover {
+    background-color: #e1bd85;
+}
+
+.group_btn > ul > li > a {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.group_btn:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    top: 17px;
+    border-top-color: #f7f6f6;
+}
+
+.group_btn2 {
+    margin-right: 20px;
+    width: 110px;
+    float: none;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #fff;
+    height: 40px;
+    line-height: 36px;
+    text-align: left;
+    padding: 0 12px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.group_btn2 > span {
+    font-size: 13px;
+    color: #fff;
+}
+
+.group_btn2 > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    max-height: 451px;
+    overflow: hidden;
+    min-height: 114px;
+    min-width: 100%;
+    text-align: left;
+}
+
+.group_btn2 > .group_depth2.on {
+    display: block;
+}
+
+.group_btn2 > ul > li:hover {
+    background-color: #e1bd85;
+}
+
+.group_btn2 > ul > li > a {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.group_btn2:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    top: 17px;
+    border-top-color: #f7f6f6;
+}
+
+.group_button > a {
+    background-color: #e1bd85;
+    height: 40px;
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-left: 90px;
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 110px;
+    font-weight: bold;
+}
+
+.group_button > a > span {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1259px) {
+    .check_availability {
+        height: 205px;
+    }
+
+    .check_availability > div {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .check_title {
+        width: 100%;
+        position: relative;
+        float: none;
+        text-align: center;
+    }
+
+    .check_title > h2 {
+        display: inline-block;
+    }
+
+    .check_title > h2:before {
+        top: -8px;
+        left: 10px;
+    }
+
+    .calender_wrap {
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 947px) {
+    .check_availability {
+        height: 220px;
+    }
+
+    .check_availability > div {
+        padding: 10px 15px;
+        width: 750px;
+    }
+
+    .group_button {
+        display: block;
+        clear: both;
+        margin-top: 20px;
+        text-align: right;
+    }
+
+    .group_button > a {
+        margin-left: 0;
+        margin-right: 22px;
+        text-align: center;
+    }
+
+    .check_title > h2:before {
+        display: none;
+    }
+
+    .check_title > h2 {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .check_availability {
+        height: 278px;
+    }
+
+    .check_availability > div {
+        width: 100%;
+    }
+
+    .cal1 {
+        width: 50%;
+        margin-right: 0;
+        float: left;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .group_btn,
+    .group_btn2 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .calender_check > i,
+    .calender_out > i {
+        right: 30px;
+    }
+
+    .group_button {
+        float: right;
+    }
+
+    input::placeholder {
+        color: #fff;
+        font-size: 12px;
+        letter-spacing: -1px;
+    }
+}

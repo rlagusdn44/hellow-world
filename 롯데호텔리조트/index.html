@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 롯데 호텔 리조트 </title>
+    <link rel="stylesheet" href="CSS/master.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/banner_slide.js"></script>
+    <script src="js/promotion_slide.js"></script>
+    <script src="js/con1_img.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/check_in_out.js"></script>
+    <script src="js/insta_slide.js"></script>
+    <script>
+        $(function() {
+            $(".testDatepicker").datepicker({
+                dayNames: ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'],
+                dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                minDate: 0,
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
+            });
+        });
+        $(document).on('click', 'a[href="#"]', function(e) {
+            e.preventDefault();
+        });
+
+    </script>
+</head>
+
+<body>
+    <input type="checkbox" id="toggle_menu" />
+    <header>
+        <div id="header_wrap">
+            <div id="header_top">
+                <ul>
+                    <li><a href="#%^&">예약조회</a></li>
+                    <li><a href="#%^&">로그인</a></li>
+                    <li><a href="#%^&">회원가입</a></li>
+                    <li><a href="#%^&">멤버십</a></li>
+                    <li><a href="#%^&">라이브챗</a></li>
+                </ul>
+            </div>
+            <div class="header_bottom_bg">
+                <div id="header_bottom">
+                    <h2><a class="logo" href="#%^&"></a></h2>
+                    <ul class="depth1">
+                        <li>
+                            <a href="#%^&">호텔찾기</a>
+                            <h3>호텔찾기</h3>
+                            <div class="depth2">
+                                <div class="menu_title"><a href="#%^&">호텔찾기</a></div>
+                                <div class="thume"><span class="thum_1"></span></div>
+                                <ul>
+                                    <li><a href="#%^&"><span>롯데호텔지점</span></a></li>
+                                    <li><a href="#%^&">신규 롯데호텔</a></li>
+                                    <li><a href="#%^&">호텔리뷰</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#%^&">프로모션</a>
+                            <h3>프로모션</h3>
+                            <div class="depth2">
+                                <div class="menu_title"><a href="#%^&">프로모션</a></div>
+                                <div class="thume"><span class="thum_2"></span></div>
+                                <ul>
+                                    <li><a href="#%^&">호텔 패키지</a></li>
+                                    <li><a href="#%^&">룸 프로모션</a></li>
+                                    <li><a href="#%^&">호텔 이벤트</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#%^&">웨딩&컨벤션</a>
+                            <h3>웨딩&컨벤션</h3>
+                            <div class="depth2">
+                                <div class="menu_title"><a href="#%^&">웨딩&컨벤션</a></div>
+                                <div class="thume"><span class="thum_3"></span></div>
+                                <ul>
+                                    <li><a href="#%^&">호텔웨딩</a></li>
+                                    <li><a href="#%^&">호텔 컨벤션</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#%^&">호텔소개</a>
+                            <h3>호텔소개</h3>
+                            <div class="depth2">
+                                <div class="menu_title"><a href="#%^&">호텔소개</a></div>
+                                <div class="thume"><span class="thum_4"></span></div>
+                                <ul>
+                                    <li><a href="#%^&">롯데 호텔스토리</a></li>
+                                    <li><a href="#%^&">브랜드소개</a></li>
+                                    <li><a href="#%^&">뉴스</a></li>
+                                    <li><a href="#%^&">서비스아카데미</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <label class="toggle_menu" for="toggle_menu"></label>
+                </div>
+            </div>
+        </div>
+        <div id="banner_slide">
+            <ul>
+                <li>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div>
+                </li>
+            </ul>
+        </div>
+        <button class="next_btn"><span></span></button>
+        <button class="prev_btn"><span></span></button>
+        <div class="check_availability">
+            <div>
+                <div class="check_title">
+                    <h2>CHECK AVAILABILITY</h2>
+                </div>
+                <div class="calender_wrap">
+                    <div class="calender_check cal1">
+                        <input type="text" class="testDatepicker" placeholder="체크인 날짜">
+                        <i></i>
+                    </div>
+                    <div class="calender_out cal1">
+                        <input type="text" class="testDatepicker" placeholder="체크아웃 날짜">
+                        <i></i>
+                    </div>
+                    <div class=" cal1">
+                        <div class="group_btn">
+                            <span>성인</span>
+                            <ul class="group_depth">
+                                <li><a href="#%^&">성인</a></li>
+                                <li><a href="#%^&">성인 1</a></li>
+                                <li><a href="#%^&">성인 2</a></li>
+                                <li><a href="#%^&">성인 3</a></li>
+                                <li><a href="#%^&">성인 4</a></li>
+                                <li><a href="#%^&">성인 5</a></li>
+                                <li><a href="#%^&">성인 6</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cal1">
+                        <div class="group_btn2">
+                            <span>소아</span>
+                            <ul class="group_depth2">
+                                <li><a href="#%^&">소아</a></li>
+                                <li><a href="#%^&">소아 1</a></li>
+                                <li><a href="#%^&">소아 2</a></li>
+                                <li><a href="#%^&">소아 3</a></li>
+                                <li><a href="#%^&">소아 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group_button">
+                        <a href="#%^&"><span>검색</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="promotion">
+        <div class="container">
+            <div class="text_box">
+                <img class="bar_img" src="images/main_specail_bar.jpg" alt="bar" />
+                <h2>SPECIAL PROMOTION</h2>
+                <p><span>롯데호텔이 추천하는 프로모션</span><br />휴가를 갈 때가 되면 롯데호텔은 독특한 여행 상품과 호텔 할인을 제공합니다. 여행 날짜, 패키지 유형 또는 관심사를 기준으로 당사의 최신 호텔 특가 상품을 검색하세요.</p>
+                <a href="#%^&" class="more_btn"><button><span>All Promotion</span></button></a>
+            </div>
+            <div class="pm_list">
+                <ul>
+                    <li class="pm_img1">
+                        <a href="#"><span></span></a>
+                        <div class="pm_text_box">
+                            <p>
+                                <a href="#"><span class="title1">Room & Breakfast (STAY)</span><br /><span class="title2">객실 1박 (2인 기준) + STAY 조식 2인</span><br /><span class="title2">예약2020-01-01 ~ 2020-12-31</span><br /><span class="title2">투숙2020-01-01 ~ 2020-12-31</span><br /><span class="money"><strong>PACKAGE</strong>&nbsp;&nbsp;KRW 450,000 ~</span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pm_img2">
+                        <a href="#"><span></span></a>
+                        <div class="pm_text_box">
+                            <p>
+                                <a href="#"><span class="title1">Must be Strawberry</span><br /><span class="title2">메인or이그제큐티브타워｜딸기뷔페 이용권 2인 + 샹테카이 파우치키트</span><br /><span class="title2">2019-11-26 ~ 2020-03-15</span><br /><span class="title2">2020-01-02 ~ 2020-03-16</span><br /><span class="money"><strong>PACKAGE</strong>&nbsp;&nbsp;KRW 286,000 ~</span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pm_img3">
+                        <a href="#"><span></span></a>
+                        <div class="pm_text_box">
+                            <p>
+                                <a href="#"><span class="title1">LOTTE WORLD Adventure</span><br /><span class="title2">디럭스룸 1박 (2인 기준) + 조식 2인 (성인2) + 롯데월드 자유이용권 2매</span><br /><span class="title2">예약2020-01-01 ~ 2020-12-31</span><br /><span class="title2">투숙2020-01-01 ~ 2020-12-31</span><br /><span class="money"><strong>PACKAGE</strong>&nbsp;&nbsp;KRW 280,000 ~</span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pm_img4">
+                        <a href="#"><span></span></a>
+                        <div class="pm_text_box">
+                            <p>
+                                <a href="#"><span class="title1">[스페셜] Stay in Room</span><br /><span class="title2">디럭스 마운틴 패밀리 트윈 + 선착순 객실 업그레이드 + 룸서비스 조식 + 웰컴 드링크 + 미니바 + 연박 혜택</span><br /><span class="title2">예약2020-02-05 ~ 2020-03-31</span><br /><span class="title2">투숙2020-02-10 ~ 2020-04-01</span><br /><span class="money"><strong>PACKAGE</strong>&nbsp;&nbsp;KRW 210,000 ~</span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pm_img5">
+                        <a href="#"><span></span></a>
+                        <div class="pm_text_box">
+                            <p>
+                                <a href="#"><span class="title1">Tasty Paradise</span><br /><span class="title2">Book 3 nights or more and experience the famous Monster Burger. </span><br /><span class="title2">예약2017-09-19 ~ 2020-03-31</span><br /><span class="title2">투숙2017-09-19 ~ 2020-03-31</span><br /><span class="money"><strong>PACKAGE</strong>&nbsp;&nbsp;USD 217 ~</span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pm_img6">
+                        <a href="#"><span></span></a>
+                        <div class="pm_text_box">
+                            <p>
+                                <a href="#"><span class="title1">B&B In the City</span><br /><span class="title2">Bed & Breakfast In the City !
+                                        얼리버드 추가 혜택으로 더욱 합리적이고 편안한 롯데시티호텔을 즐겨보세요!</span><br /><span class="title2">예약2018-12-28 ~ 2020-03-31</span><br /><span class="title2">투숙2019-01-01 ~ 2020-03-31</span><br /><span class="money"><strong>PACKAGE</strong>&nbsp;&nbsp;KRW 100,000 ~</span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pm_img1">
+                        <a href="#"><span></span></a>
+                        <div class="pm_text_box">
+                            <p>
+                                <a href="#"><span class="title1">Room & Breakfast (STAY)</span><br /><span class="title2">객실 1박 (2인 기준) + STAY 조식 2인</span><br /><span class="title2">예약2020-01-01 ~ 2020-12-31</span><br /><span class="title2">투숙2020-01-01 ~ 2020-12-31</span><br /><span class="money"><strong>PACKAGE</strong>&nbsp;&nbsp;KRW 450,000 ~</span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pm_img2">
+                        <a href="#"><span></span></a>
+                        <div class="pm_text_box">
+                            <p>
+                                <a href="#"><span class="title1">Must be Strawberry</span><br /><span class="title2">메인or이그제큐티브타워｜딸기뷔페 이용권 2인 + 샹테카이 파우치키트</span><br /><span class="title2">2019-11-26 ~ 2020-03-15</span><br /><span class="title2">2020-01-02 ~ 2020-03-16</span><br /><span class="money"><strong>PACKAGE</strong>&nbsp;&nbsp;KRW 286,000 ~</span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pm_img3">
+                        <a href="#"><span></span></a>
+                        <div class="pm_text_box">
+                            <p>
+                                <a href="#"><span class="title1">LOTTE WORLD Adventure</span><br /><span class="title2">디럭스룸 1박 (2인 기준) + 조식 2인 (성인2) + 롯데월드 자유이용권 2매</span><br /><span class="title2">예약2020-01-01 ~ 2020-12-31</span><br /><span class="title2">투숙2020-01-01 ~ 2020-12-31</span><br /><span class="money"><strong>PACKAGE</strong>&nbsp;&nbsp;KRW 280,000 ~</span></a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="next_btn"><span></span></button>
+                <button class="prev_btn"><span></span></button>
+            </div>
+        </div>
+    </section>
+    <section id="main_contents">
+        <div class="container1_wrap">
+            <div class="con1">
+                <div class="con1_text_box">
+                    <img src="images/main_room_facl_bar.png" alt="bar" />
+                    <h2>롯데호텔앤리조트 공식 디지털 매거진</h2>
+                    <p>프리미엄 호텔<br />셀렉트숍 서비스<br />'올댓호텔'도 만나보세요</p>
+                    <a href="#%^&" class="more_btn"><button><span>HOTEL VIEW</span></button></a>
+                </div>
+                <div class="con1_img_wrap">
+                    <div class="con1_img">
+                        <div class="con1_img1"></div>
+                        <div class="con1_img2"></div>
+                    </div>
+                    <div class="con1_img_text">
+                        <h2>[February 2020] 바리스타 에디션</h2>
+                        <p>프리미엄 호텔 셀렉트숍 서비스, 올댓호텔의 2월 아이템은 ‘바리스타 에디션’이다. 호텔 라운지에서 누리던 커피 한 잔의 맛과 여유를 집에서도 만끽할 수 있다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container1_wrap">
+            <div class="con2">
+                <div class="con2_text_box">
+                    <img src="images/main_room_facl_bar.png" alt="bar" />
+                    <h2>롯데아라이리조트 소개</h2>
+                    <p>롯데아라이리조트는 묘코산에서<br /> 바다로 이어지는 산들과 멀리 펼쳐지는<br />전원 풍경이 아름다운 자연속에 자리잡고 있습니다.</p>
+                    <a href="#%^&" class="more_btn"><button><span>RESEORT VIEW</span></button></a>
+                </div>
+                <div class="con2_img_wrap">
+                    <div class="con1_img">
+                        <div class="con2_img1"></div>
+                        <div class="con2_img2"></div>
+                    </div>
+                    <div class="con1_img_text">
+                        <h2>Snow Lighting Illumination</h2>
+                        <p>올해 리뉴얼 된 심볼 트리와 브릿지 일루미네이션에 이어, 초대형 일루미네이션이 등장하게 됩니다!
+                            이번 일루미네이션 행사를 통해, 환상적인 눈 내리는 밤의 추억을 만들어보세요.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container3_wrap">
+            <div class="con3">
+                <h2>롯데호텔 리워즈 혜택</h2>
+                <div>
+                    <div class="con3_item1 con3_item">
+                        <span><img src="images/180716-1-53-pc-mai-lottehotel.png" alt="메인-멤버십혜택"></span>
+                        <p>회원 전용 이벤트를 누려보세요.</p>
+                    </div>
+                    <div class="con3_item2 con3_item">
+                        <span><img src="images/180716-2-53-pc-mai-lottehotel.png" alt="메인-멤버십혜택"></span>
+                        <p>멤버십 회원만을 위해 할인된 가격을 제공합니다.</p>
+                    </div>
+                    <div class="con3_item3 con3_item">
+                        <span><img src="images/180716-3-53-pc-mai-lottehotel.png" alt="메인-멤버십혜택" /></span>
+                        <p>포인트를 적립하고, 현금처럼 실용적으로 사용하세요.</p>
+                    </div>
+                </div>
+                <a href="#"><button>롯데호텔 리워즈 가입하기</button></a>
+            </div>
+        </div>
+        <div class="container4_wrap">
+            <div class="insta_title">
+                <h2>Connect With</h2>
+                <span>#lottehotels</span>
+            </div>
+            <div class="insta_slide_wrap">
+                <ul class="insta_slide">
+                    <li class="con4_img1"><a href="#"><span></span></a></li>
+                    <li class="con4_img2"><a href="#"><span></span></a></li>
+                    <li class="con4_img3"><a href="#"><span></span></a></li>
+                    <li class="con4_img4"><a href="#"><span></span></a></li>
+                    <li class="con4_img5"><a href="#"><span></span></a></li>
+                    <li class="con4_img6"><a href="#"><span></span></a></li>
+                    <li class="con4_img1"><a href="#"><span></span></a></li>
+                    <li class="con4_img2"><a href="#"><span></span></a></li>
+                    <li class="con4_img3"><a href="#"><span></span></a></li>
+                </ul>
+            </div>
+            <button class="insta_next"></button>
+            <button class="insta_prev"></button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_wrap">
+            <div>
+                <div class="logo_wrap">
+                    <h2><a href="#"><img src="images/footer-logo.png" alt="footer_logo"></a></h2>
+                </div>
+                <div class="footer_info_wrap">
+                    <ul>
+                        <li><a href="#">오시는길</a></li>&nbsp;
+                        <span>|</span>
+                        <li><a href="#">자주묻는 질문</a></li>&nbsp;
+                        <span>|</span>
+                        <li><a href="#">개인정보취급방침</a></li>&nbsp;
+                        <span>|</span>
+                        <li><a href="#">이용약관</a></li>&nbsp;
+                        <li class="info_sns"><a href="#"><span class="facebook"></span></a></li>
+                        <li class="info_sns"><a href="#"><span class="insta"></span></a></li>
+                    </ul>
+                    <div></div>
+                    <ul class="info_bottom">
+                        <li>주소 : <b>04533, 서울특별시 중구 을지로 30</b></li><br />
+                        <li>대표이사 : <b>김현식</b></li>
+                        <li>사업자등록번호 : <b> 104-81-25980</b></li>
+                        <li>통신판매업신고 : <b> 중구02802호</b></li><br />
+                        <li>© 2019 Lotte HOTEL & RESORTS CO.,LTD.All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

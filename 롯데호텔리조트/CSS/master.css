@@ -1,0 +1,35 @@
+/* master.css */
+
+@import url('header.css');
+@import url('common.css');
+@import url('banner_slide.css');
+@import url('content.css');
+@import url('footer_style.css');
+
+input#toggle_menu {
+    display: none;
+}
+
+h4 {
+    display: none;
+}
+
+@media screen and (min-width: 980px) {
+    .pc_ver {
+        display: block;
+    }
+
+    .mob_ver {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .pc_ver {
+        display: none;
+    }
+
+    .mob_ver {
+        display: block;
+    }
+}
