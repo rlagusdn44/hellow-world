@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 서울대학교병원 </title>
+    <link rel="stylesheet" href="CSS/master.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="CSS/swiper.min.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/hd_slide.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/service_slide.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/tab_banner.js"></script>
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 780px) {
+            .banner_img1 {
+                background: url(images/banner_img1.jpg) no-repeat center center;
+                width: 100vw;
+                background-size: cover;
+                height: 460px;
+            }
+
+            .banner_img2 {
+                background: url(images/banner_img2.jpg) no-repeat center center;
+                width: 100vw;
+                background-size: cover;
+                height: 460px;
+            }
+        }
+
+    </style>
+    <script>
+        $(document).on('click', 'a[href="#"]', function(e) {
+            e.preventDefault();
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- HEADER [S] -->
+    <header id="main_header">
+        <div class="hd_top">
+            <h1 class="logo"><a href="#"><img class="pc_ver" src="images/logo.png" alt="로고" /><img class="mob_ver" src="images/m_logo.png" alt="로고" /></a></h1>
+            <div class="hd_slide_area">
+                <div class="hd_slide_wrap">
+                    <div class="hd_slide">
+                        <ul>
+                            <li><a href="#"><img src="images/hd_slide_01.jpg" alt="헤더슬라이드 이미지" /> <strong>제15기 WOW 대학생 봉사단 모집</strong></a></li>
+                            <li><a href="#"><img src="images/hd_slide_02.jpg" alt="헤더슬라이드 이미지" /> <strong>2019년 서울대학교병원 부패방지 시책평가 결과</strong></a></li>
+                            <li><a href="#"><img src="images/hd_slide_03.jpg" alt="헤더슬라이드 이미지" /> <strong>[질병관리본부] 미세먼지에 대처하는 질환자별 행동요령</strong></a></li>
+                            <li><a href="#"><img src="images/hd_slide_04.jpg" alt="헤더슬라이드 이미지" /> <strong>2019년 서울대병원 청렴도 측정 결과</strong></a></li>
+                            <li><a href="#"><img src="images/hd_slide_01.jpg" alt="헤더슬라이드 이미지" /> <strong>제15기 WOW 대학생 봉사단 모집</strong></a></li>
+                        </ul>
+                    </div>
+                    <button class="hd_slide_up_btn"></button>
+                    <button class="hd_slide_down_btn"></button>
+                </div>
+            </div>
+            <ul class="hd_menu">
+                <li><a href="#">원격</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li class="lang">
+                    <div class="lang_box">
+                        <a href="#" class="btn_lang">
+                            Language
+                            <span></span>
+                        </a>
+                        <select class="select_lang" onchange="change_country(this.value)">
+                            <option value="KO" selected>Korea</option>
+                            <option value="CH">China</option>
+                            <option value="MG">Mongolian</option>
+                            <option value="RS">Russian</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+            <label class="toggle_menu mob_ver" for="toggle_menu"></label>
+        </div>
+        <input id="toggle_menu" type="checkbox" />
+        <div class="hd_bottom">
+            <div class="gnb_wrap">
+                <label class="menu_close_btn mob_ver" for="toggle_menu"></label>
+                <div class="gnb_top mob_ver">
+                    <h2><a href="#"><img src="images/logo.png" alt="로고" /></a></h2>
+                    <select class="select_lang" onchange="change_country(this.value)">
+                        <option value="KO" selected>Korea</option>
+                        <option value="CH">China</option>
+                        <option value="MG">Mongolian</option>
+                        <option value="RS">Russian</option>
+                    </select>
+                </div>
+                <div class="gnb_bottom">
+                    <div class="gnb_main">
+                        <div class="gnb_contains">
+                            <div class="gnb_box">
+                                <ul>
+                                    <li><a href="#"><span>진료안내</span></a></li>
+                                    <li><a href="#"><span>이용안내</span></a></li>
+                                    <li><a href="#"><span>건강정보</span></a></li>
+                                    <li><a href="#"><span>고객참여</span></a></li>
+                                    <li><a href="#"><span>병원소개</span></a></li>
+                                </ul>
+                                <a href="#" title="전체메뉴" class="btn_all_pc pc_ver"></a>
+                            </div>
+                        </div>
+                        <div class="hd_sub">
+                            <div class="contains">
+                                <div class="sub_menu">
+                                    <ul class="sub_menu_area">
+                                        <li class="menu_box">
+                                            <p class="sub_menu_title">진료안내</p>
+                                            <p>서울대학교병원의<br /> 의료진은 환자를 위해 항상<br /> 노력하고 있습니다.</p><span class="line"></span>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">진료과/의료진<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">본원</a></li>
+                                                        <li><a href="#">어린이병원</a></li>
+                                                        <li><a href="#">암병원</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">인터넷 진료예약</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">예약확인/취소<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">진료예약확인</a></li>
+                                                        <li><a href="#">검진예약확인</a></li>
+                                                        <li><a href="#">진료이력조회</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">외래진료안내<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">예약안내</a></li>
+                                                        <li><a href="#">진료안내</a></li>
+                                                        <li><a href="#">심층진찰안내</a></li>
+                                                        <li><a href="#">비급여 진료비용</a></li>
+                                                        <li><a href="#">지역채혈안내</a></li>
+                                                        <li><a href="#">진료비 하이패스</a></li>
+                                                        <li><a href="#">진료안내FAQ</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">입/퇴원안내<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">입원절차</a></li>
+                                                        <li><a href="#">퇴원절차</a></li>
+                                                        <li><a href="#">입원생활안내</a></li>
+                                                        <li><a href="#">입/퇴원절차FAQ</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">가정간호안내<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">가정간호 소개</a></li>
+                                                        <li><a href="#">가정간호 내용</a></li>
+                                                        <li><a href="#">가정간호 이용안내</a></li>
+                                                        <li><a href="#">가정간호 FAQ</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">공단건강검진 예약</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub_menu_area">
+                                        <li class="menu_box">
+                                            <p class="sub_menu_title">이용안내</p>
+                                            <p>서울대학교병원의<br /> 의료진은 환자를 위해 항상<br /> 노력하고 있습니다.</p><span class="line"></span>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">위치안내<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">오시는길</a></li>
+                                                        <li><a href="#">원내위치도</a></li>
+                                                        <li><a href="#">주차안내</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">편의시설<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">원내 편의시설</a></li>
+                                                        <li><a href="#">주변 편의시설</a></li>
+                                                        <li><a href="#">진료이력조회</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">신청/발급안내<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">진료의뢰서</a></li>
+                                                        <li><a href="#">진단서발급</a></li>
+                                                        <li><a href="#">장애/병사/채용신체검사서</a></li>
+                                                        <li><a href="#">진료비계산서</a></li>
+                                                        <li><a href="#">처방전</a></li>
+                                                        <li><a href="#">의무기록 열람/사본발급</a></li>
+                                                        <li><a href="#">연말정산 진료비영수증</a></li>
+                                                        <li><a href="#">제증명 FAQ</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">문병안내</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">위임장/동의서안내</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">미국 이민 비자 신체검사</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">전화번호안내</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">FAQ(통합)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">증명서 발급사이트</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub_menu_area">
+                                        <li class="menu_box">
+                                            <p class="sub_menu_title">건강정보</p>
+                                            <p>서울대학교병원의<br /> 의료진은 환자를 위해 항상<br /> 노력하고 있습니다.</p><span class="line"></span>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">건강TV<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li class="sub_menu_img"><a href="#"><img src="images/sub_menu_img1.jpg" alt="코로나바이러스이미지"></a>
+                                                            <p>[193편] 코로나바이러스<br />진단과 치료</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">자가진단서비스</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">의학백과사전</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">우리집주치의<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li class="sub_menu_img"><a href="#"><img src="images/sub_menu_img2.jpg" alt="우리집주치의 이미지" /></a>우리집주치의 동영상</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">문병안내</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">위임장/동의서안내</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">미국 이민 비자 신체검사</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">전화번호안내</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">FAQ(통합)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">증명서 발급사이트</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub_menu_area">
+                                        <li class="menu_box">
+                                            <p class="sub_menu_title">고객참여</p>
+                                            <p>서울대학교병원의<br /> 의료진은 환자를 위해 항상<br /> 노력하고 있습니다.</p><span class="line"></span>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">고객의소리<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">고객의소리 등록</a></li>
+                                                        <li><a href="#">고객상담실 업무안내</a></li>
+                                                        <li><a href="#">감사이야기</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">자원봉사센터<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">모집공지</a></li>
+                                                        <li><a href="#">갤러리</a></li>
+                                                        <li><a href="#">자원봉사란</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">후원<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">발전후원회</a></li>
+                                                        <li><a href="#">어린이후원회</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">환자권리장전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">고객헌장</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">정보공개제도 안내<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">정보공개제도 안내</a></li>
+                                                        <li><a href="#">정보공개목록</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">사업실명제<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">실명제 개요</a></li>
+                                                        <li><a href="#">실명제 목록</a></li>
+                                                        <li><a href="#">클린센터</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">병원보 퀴즈</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">설문조사</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub_menu_area">
+                                        <li class="menu_box">
+                                            <p class="sub_menu_title">병원소개</p>
+                                            <p>서울대학교병원의<br /> 의료진은 환자를 위해 항상<br /> 노력하고 있습니다.</p><span class="line"></span>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">병원역사<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">사진으로보는 역사</a></li>
+                                                        <li><a href="#">연혁</a></li>
+                                                        <li><a href="#">제중원</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">병원장 인사말<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">인사말</a></li>
+                                                        <li><a href="#">역대병원장</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">정기간행물<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">웹진</a></li>
+                                                        <li><a href="#">매거진 VOM</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">병원소식<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">병원뉴스</a></li>
+                                                        <li><a href="#">강좌안내</a></li>
+                                                        <li><a href="#">언론보도</a></li>
+                                                        <li><a href="#">병원신문</a></li>
+                                                        <li><a href="#">입찰정보</a></li>
+                                                        <li><a href="#">채용공고</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">병원개요<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">실명제 개요</a></li>
+                                                        <li><a href="#">실명제 목록</a></li>
+                                                        <li><a href="#">클린센터</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_box">
+                                            <ul class="menu_list">
+                                                <li>
+                                                    <a href="#">미션/비전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">조직도<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">조직도</a></li>
+                                                        <li><a href="#">현황 및 통계</a></li>
+                                                        <li><a href="#">국내외 유관기관</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">HI/로고<span class="ic"></span></a>
+                                                    <ul class="sub_list">
+                                                        <li><a href="#">HI소개</a></li>
+                                                        <li><a href="#">HI / 캐릭터 / 기타</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">갤러리</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="menu_common">
+                                        <div class="banner_box">
+                                            <a href="#"><img src="images/hd_banner.jpg" alt="헤더배너이미지" /></a>
+                                        </div>
+                                        <div class="btn_box">
+                                            <a href="#">인터넷진료예약</a>
+                                            <a href="#" class="reserve_btn">예약확인/취소</a>
+                                        </div>
+                                        <div class="tel_box">
+                                            <a href="#">대표전화 <b>1588-5700</b></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gnb_footer mob_ver">
+                        <div class="footer_box">
+                            <div class="sns_menu">
+                                <a href="#"><img src="images/ico_footer_facebook.png" alt="페이스북" /></a>
+                                <a href="#"><img src="images/ico_footer_instagram.png" alt="인스타그램" /></a>
+                                <a href="#"><img src="images/ico_footer_tw.png" alt="트위터" /></a>
+                            </div>
+                            <p>COPYRIGHT 2017 SNUH. ALL RIGHTS RESERVED.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header [E] -->
+
+    <!-- CONTENT [S] -->
+    <section id="content">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="banner_img1"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner_img2"></div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+        </script>
+        <div class="main_quick">
+            <div class="contains">
+                <ul>
+                    <li><a href="#"><span class="icon_1 icon"></span><span class="text">위치안내</span></a></li>
+                    <li><a href="#"><span class="icon_2 icon"></span><span class="text">원내위치도</span></a></li>
+                    <li><a href="#"><span class="icon_3 icon"></span><span class="text">주변편의시설</span></a></li>
+                </ul>
+                <div>
+                    <p class="title">온라인으로 예약해보세요</p>
+                    <p><span>서울대학교병원에서는</span>온라인으로 원하는 진료를<br />간편하고<br />편리하게 예약하실 수 있습니다.</p>
+                    <div class="btn_wrap">
+                        <a href="#">예약하기</a>
+                        <a href="#" class="btn_wline">상담하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_service">
+            <div class="sub_title_box">
+                <p class="title_service">병원사용 설명서</p>
+                <p class="desc pc_ver">우리병원에 오시는 분들이 정말로 원하는 것이 무엇일까?<br />정말로 궁금한 것이 무엇일까? 글로 다 설명할 수 없는 이야기들을<br />알기쉽게 알려주는 대한민국 병원사용 설명서!</p>
+            </div>
+            <div class="service_area">
+                <div class="slide_box">
+                    <ul>
+                        <li class="service_img1"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img2"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img3"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img4"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img5"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img6"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img1"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img2"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img3"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img4"><a href="#">
+                                <div></div>
+                            </a></li>
+                        <li class="service_img5"><a href="#">
+                                <div></div>
+                            </a></li>
+                    </ul>
+                    <div class="slide_btn">
+                        <div class="service_btn_box">
+                            <a href="#" class="btn_next">다음</a>
+                            <a href="#" class="btn_prev">이전</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news_wrap">
+            <div class="news_contains">
+                <div class="left_news">
+                    <div class="new_title_box">
+                        <p>서울대학교병원의<br />소식을 전해드립니다.</p>
+                    </div>
+                    <div class="new_bottom">
+                        <div class="tab_menu_wrap">
+                            <div class="tab_menu">
+                                <a href="#"><span class="tab_tit">병원 소식</span><span class="tab_icon">▼</span></a>
+                                <a href="#"><span class="tab_tit">입찰</span><span class="tab_icon">▼</span></a>
+                                <a href="#"><span class="tab_tit">언론보도</span><span class="tab_icon">▼</span></a>
+                                <a href="#"><span class="tab_tit">채용정보</span><span class="tab_icon">▼</span></a>
+                            </div>
+                        </div>
+                        <div class="tab_bottom">
+                            <ul>
+                                <li><a href="#"><span>강박증 환자, 뇌 구조 발달양상 달라</span></a><span class="date">2020-03-03</span></li>
+                                <li><a href="#"><span>서울대병원, 국가적 재난 극복할 위기대응병동 운영</span></a><span class="date">2020-03-03</span></li>
+                                <li><a href="#"><span>확진자, 중증과 경증 분리하고 전국 의료기관으로 분산해야</span></a><span class="date">2020-03-02</span></li>
+                                <li><a href="#"><span>서울대병원 운영 SKSH, 또 한번 우수성 입증 </span></a><span class="date">2020-03-02</span></li>
+                            </ul>
+                            <a href="#" class="btn_more">더보기</a>
+                        </div>
+                        <div class="tab_bottom">
+                            <ul>
+                                <li><a href="#"><span>2019년 녹색제품 구매이행계획</span></a><span class="date">2020-02-28</span></li>
+                                <li><a href="#"><span>고객주차장 증축사업 설계용역 제안공모 입상작 공고 </span></a><span class="date">2019-09-02</span></li>
+                                <li><a href="#"><span>본관 SICU 및 심혈관센터, 통합물류부 재배치 공사 설계용역 제안공모 입상작 공고 </span></a><span class="date">2019-08-22</span></li>
+                                <li><a href="#"><span>고객주차장 증축사업 설계용역 제안공모 심사위원 확정 </span></a><span class="date">2019-08-19</span></li>
+                            </ul>
+                            <a href="#" class="btn_more">더보기</a>
+                        </div>
+                        <div class="tab_bottom">
+                            <ul>
+                                <li><a href="#"><span>"강박증 환자 뇌구조 발달양상, 정상인과 다르다"</span></a><span class="date">2020-03-05</span></li>
+                                <li><a href="#"><span>마이크 돌려쓰고 여러손 거친 마우스 클릭.. 업주 "방역지침 없어"</span></a><span class="date">2020-03-05</span></li>
+                                <li><a href="#"><span>서울대병원 '문경 코로나19 생활치료센터' 가동 </span></a><span class="date">2020-03-05</span></li>
+                                <li><a href="#"><span>하늘아래 너와 나</span></a><span class="date">2020-03-04</span></li>
+                            </ul>
+                            <a href="#" class="btn_more">더보기</a>
+                        </div>
+                        <div class="tab_bottom">
+                            <ul>
+                                <li><a href="#"><span>2020년 2월 무기계약직 직원채용 서류전형 합격자 발표 및 2차 인성검사, 실무면접 일정공고</span></a><span class="date">2020-03-06</span></li>
+                                <li><a href="#"><span>서울대학교병원 블라인드 직원채용 (대체근로자) 공고 (장애인 특별우대) </span></a><span class="date">2020-03-05</span></li>
+                                <li><a href="#"><span>진료교수 공개채용</span></a><span class="date">2020-03-04</span></li>
+                                <li><a href="#"><span>2020년도 환경유지지원직 채용 최종면접 합격자 발표 및 임용후보자 등록 공고</span></a><span class="date">2020-02-27</span></li>
+                            </ul>
+                            <a href="#" class="btn_more">더보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rigth_banner">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <h2>서울대학병원 역사</h2>
+            <div class="history_wrap">
+                <ul class="history_list">
+                    <li><a href="#">
+                            <div>
+                                <p class="text_top">[제1편] 제중원은 과연 누가 설립했는가?</p>
+                                <p class="text_line"></p><span class="date">2017-08-18</span>
+                            </div>
+                        </a></li>
+                    <li><a href="#">
+                            <div>
+                                <p class="text_top">[제2편] 제중원 운영권은 왜 미국 북장로회에 이관되었나?</p>
+                                <p class="text_line"></p><span class="date">2017-08-18</span>
+                            </div>
+                        </a></li>
+                    <li><a href="#">
+                            <div>
+                                <p class="text_top">[제3편] 제중원은 왜 지금도 중요한가?</p>
+                                <p class="text_line"></p><span class="date">2017-08-18</span>
+                            </div>
+                        </a></li>
+                    <li><a href="#">
+                            <div>
+                                <p class="text_top">[제4편] '한국 최초의 의사'는 과연 누구인가?</p>
+                                <p class="text_line"></p><span class="date">2017-08-18</span>
+                            </div>
+                        </a></li>
+                </ul>
+                <a href="#"></a>
+            </div>
+            <button class="history_next"></button>
+            <button class="history_prev"></button>
+        </div>
+    </section>
+    <!-- CONTENT [E] -->
+
+    <!-- FT_QUICK [S] -->
+    <div id="ft_quick">
+        <div class="ft_quick_wrap">
+            <ul>
+                <li><i class="quick_icon"></i>
+                    <p><span><span>서울대학병원</span>예약 및 문의</span><span class="tel">1588-5700</span></p>
+                </li>
+                <li><i class="quick_icon"></i>
+                    <p><span><span>진료시간</span></span><span class="tel">평일9시~17시 / 토 9시~12시</span></p>
+                </li>
+                <li><i class="quick_icon"></i>
+                    <p><span><span>오시는길</span><b>서울시 종로구 대학로 101</b></span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- FT_QUICK [E] -->
+
+    <!-- FOOTER [S] -->
+    <footer>
+        <div class="footer_top clearfix">
+            <ul class="left_menu">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">환자의 권리와 의무</a></li>
+            </ul>
+            <div class="right_menu">
+                <ul>
+                    <li><a href="#">비급여수가조회</a></li>
+                    <li><a href="#">직원전용</a></li>
+                    <li><a href="#">고객의소리</a></li>
+                </ul>
+                <div class="family_site">
+                    <i></i>
+                    <a href="#">패밀리사이트</a>
+                    <ul>
+                        <li><a href="#">공공보건의료사업단</a></li>
+                        <li><a href="#">의학역사문화원</a></li>
+                        <li><a href="#">발전후원회</a></li>
+                        <li><a href="#">어린이병원후원회</a></li>
+                        <li><a href="#">의생명연구원</a></li>
+                        <li><a href="#">의학연구협력센터</a></li>
+                        <li><a href="#">임상시험센터</a></li>
+                        <li><a href="#">혁신세포치료연구사업단</a></li>
+                        <li><a href="#">의료경영고위과정</a></li>
+                        <li><a href="#">서울대학교병원 인재원</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_gnb">
+            <div>
+                <ul class="fmenu">
+                    <li>
+                        <a href="#">진료안내</a>
+                        <ul class="fmenu_sub">
+                            <li><a href="#">진료과/의료진</a></li>
+                            <li><a href="#">인터넷 진료예약</a></li>
+                            <li><a href="#">예약확인/취소</a></li>
+                            <li><a href="#">외래진료안내</a></li>
+                            <li><a href="#">입/퇴원안내</a></li>
+                            <li><a href="#">가정간호안내</a></li>
+                            <li><a href="#">공단건강검진 예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                        <ul class="fmenu_sub">
+                            <li><a href="#">위치안내</a></li>
+                            <li><a href="#">편의시설</a></li>
+                            <li><a href="#">신청/발급안내</a></li>
+                            <li><a href="#">문병안내</a></li>
+                            <li><a href="#">위임장/동의서안내</a></li>
+                            <li><a href="#">미국 이민 비자 신체검사</a></li>
+                            <li><a href="#">전화번호안내</a></li>
+                            <li><a href="#">FAQ(통합)</a></li>
+                            <li><a href="#">증명서 발급사이트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">건강정보</a>
+                        <ul class="fmenu_sub">
+                            <li><a href="#">건강TV</a></li>
+                            <li><a href="#">자가진단서비스</a></li>
+                            <li><a href="#">의학백과사전</a></li>
+                            <li><a href="#">우리집주치의</a></li>
+                            <li><a href="#">종합질병정보</a></li>
+                            <li><a href="#">의료기기정보</a></li>
+                            <li><a href="#">N의학정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객참여</a>
+                        <ul class="fmenu_sub">
+                            <li><a href="#">고객의소리</a></li>
+                            <li><a href="#">자원봉사센터</a></li>
+                            <li><a href="#">후원</a></li>
+                            <li><a href="#">환자권리장전</a></li>
+                            <li><a href="#">고객헌장</a></li>
+                            <li><a href="#">정보공개제도안내</a></li>
+                            <li><a href="#">사업실명제</a></li>
+                            <li><a href="#">병원보 퀴즈</a></li>
+                            <li><a href="#">설문조사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">병원소개</a>
+                        <ul class="fmenu_sub">
+                            <li><a href="#">병원역사</a></li>
+                            <li><a href="#">병원장 인사말</a></li>
+                            <li><a href="#">병원소식</a></li>
+                            <li><a href="#">정기간행물</a></li>
+                            <li><a href="#">병원개요</a></li>
+                            <li><a href="#">미션/비전</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">HI/로고</a></li>
+                            <li><a href="#">갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div>
+                <div class="address_wrap">
+                    <p class="p_logo">서울대학교병원</p>
+                    <p>주소 : 03080 서울특별시 종로구 대학로 101(연건동 28)</p>
+                    <p class="call_point">대표전화:<b>1588-5700</b></p>
+                    <p class="copyright">COPYRIGHT 2010 SEOUL NATIONAL UNIVERSITY HOSPITAL. ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="tel_wrap">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER [E] -->
+</body>
+
+</html>

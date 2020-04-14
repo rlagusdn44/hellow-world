@@ -1,0 +1,49 @@
+/* master.css */
+
+@import url('header_style.css');
+@import url('contents.css');
+@import url('common.css');
+@import url('footer_style.css');
+
+input#toggle_menu {
+    display: none;
+}
+
+h4 {
+    display: none;
+}
+
+@media screen and (min-width: 781px) {
+    .pc_ver {
+        display: block;
+    }
+
+    .mob_ver {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .pc_ver {
+        display: none;
+    }
+
+    .mob_ver {
+        display: block;
+    }
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
