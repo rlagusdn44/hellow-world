@@ -1,0 +1,41 @@
+/* master.css */
+
+@import url('common.css');
+@import url('header.css');
+@import url('contents.css');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input#toggle_menu {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .pc_ver {
+        display: block;
+    }
+
+    .mob_ver {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pc_ver {
+        display: none;
+    }
+
+    .mob_ver {
+        display: block;
+    }
+}
